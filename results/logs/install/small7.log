@@ -1,0 +1,845 @@
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1146 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1406 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [310 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1707 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [343 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [34.9 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1809 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [411 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [50.7 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.3 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [656 B]
+Get:27 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [231 kB]
+Get:28 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+Get:29 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1223 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.6 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9172 B]
+Get:32 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5760 B]
+Get:33 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:34 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [31.0 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [18.6 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1588 B]
+Get:38 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [212 B]
+Get:39 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:40 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [748 B]
+Get:41 http://archive.ubuntu.com/ubuntu noble-backports/multiverse Translation-en [340 B]
+Get:42 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:43 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [246 kB]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.2 kB]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [24.2 kB]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [45.4 kB]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.1 kB]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:50 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [468 B]
+Fetched 35.8 MB in 6s (5922 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+sysstat is already the newest version (12.6.1-2).
+sysstat set to manually installed.
+time is already the newest version (1.9-0.2build1).
+time set to manually installed.
+The following additional packages will be installed:
+  alsa-topology-conf alsa-ucm-conf binutils binutils-common
+  binutils-x86-64-linux-gnu build-essential bzip2 ca-certificates-java cpp
+  cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot g++
+  g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base
+  gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu java-common javascript-common
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libaopalliance-java libapache-pom-java libasan8 libasound2-data
+  libasound2t64 libatinject-jsr330-api-java libatomic1 libavahi-client3
+  libavahi-common-data libavahi-common3 libbinutils libcc1-0 libcdi-api-java
+  libcommons-cli-java libcommons-io-java libcommons-lang3-java
+  libcommons-parent-java libctf-nobfd0 libctf0 libcups2t64 libdpkg-perl
+  liberror-prone-java libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-13-dev libgeronimo-annotation-1.3-spec-java
+  libgeronimo-interceptor-3.0-spec-java libgomp1 libgprofng0 libgraphite2-3
+  libguava-java libguice-java libharfbuzz0b libhwasan0 libisl23 libitm1
+  libjansi-java libjs-jquery libjs-sphinxdoc libjs-underscore libjsr305-java
+  liblcms2-2 liblsan0 libmaven-parent-java libmaven-resolver-java
+  libmaven-shared-utils-java libmaven3-core-java libmpc3 libpcsclite1
+  libplexus-cipher-java libplexus-classworlds-java
+  libplexus-component-annotations-java libplexus-interpolation-java
+  libplexus-sec-dispatcher-java libplexus-utils2-java libpython3-dev
+  libpython3.12-dev libquadmath0 libsframe1 libsisu-inject-java
+  libsisu-plexus-java libslf4j-java libstdc++-13-dev libtsan2 libubsan1
+  libwagon-file-java libwagon-http-shaded-java libwagon-provider-api-java
+  lto-disabled-list make openjdk-17-jre-headless python3-dev python3-wheel
+  python3.12-dev zlib1g zlib1g-dev
+Suggested packages:
+  binutils-doc gprofng-gui bzip2-doc cpp-doc gcc-13-locales cpp-13-doc
+  debian-keyring g++-multilib g++-13-multilib gcc-13-doc gcc-multilib autoconf
+  automake libtool flex bison gdb gcc-doc gcc-13-multilib gdb-x86-64-linux-gnu
+  default-jre apache2 | lighttpd | httpd alsa-utils libasound2-plugins
+  libatinject-jsr330-api-java-doc libel-api-java libcommons-io-java-doc
+  cups-common bzr libasm-java libcglib-java libjsr305-java-doc liblcms2-utils
+  libmaven-shared-utils-java-doc liblogback-java pcscd
+  libplexus-utils2-java-doc junit4 testng libcommons-logging-java
+  liblog4j1.2-java libstdc++-13-doc make-doc openjdk-17-demo openjdk-17-source
+  libnss-mdns fonts-dejavu-extra fonts-ipafont-gothic fonts-ipafont-mincho
+  fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic
+The following NEW packages will be installed:
+  alsa-topology-conf alsa-ucm-conf binutils binutils-common
+  binutils-x86-64-linux-gnu build-essential bzip2 ca-certificates-java cpp
+  cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot g++
+  g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base
+  gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu java-common javascript-common
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libaopalliance-java libapache-pom-java libasan8 libasound2-data
+  libasound2t64 libatinject-jsr330-api-java libatomic1 libavahi-client3
+  libavahi-common-data libavahi-common3 libbinutils libcc1-0 libcdi-api-java
+  libcommons-cli-java libcommons-io-java libcommons-lang3-java
+  libcommons-parent-java libctf-nobfd0 libctf0 libcups2t64 libdpkg-perl
+  liberror-prone-java libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-13-dev libgeronimo-annotation-1.3-spec-java
+  libgeronimo-interceptor-3.0-spec-java libgomp1 libgprofng0 libgraphite2-3
+  libguava-java libguice-java libharfbuzz0b libhwasan0 libisl23 libitm1
+  libjansi-java libjs-jquery libjs-sphinxdoc libjs-underscore libjsr305-java
+  liblcms2-2 liblsan0 libmaven-parent-java libmaven-resolver-java
+  libmaven-shared-utils-java libmaven3-core-java libmpc3 libpcsclite1
+  libplexus-cipher-java libplexus-classworlds-java
+  libplexus-component-annotations-java libplexus-interpolation-java
+  libplexus-sec-dispatcher-java libplexus-utils2-java libpython3-dev
+  libpython3.12-dev libquadmath0 libsframe1 libsisu-inject-java
+  libsisu-plexus-java libslf4j-java libstdc++-13-dev libtsan2 libubsan1
+  libwagon-file-java libwagon-http-shaded-java libwagon-provider-api-java
+  lto-disabled-list make maven openjdk-17-jdk-headless openjdk-17-jre-headless
+  python3-dev python3-pip python3-wheel python3.12-dev zlib1g-dev
+The following packages will be upgraded:
+  zlib1g
+1 upgraded, 107 newly installed, 0 to remove and 17 not upgraded.
+Need to get 207 MB of archives.
+After this operation, 561 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g amd64 1:1.3.dfsg-3.1ubuntu2.3 [63.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 alsa-topology-conf all 1.2.5.1-2 [15.5 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasound2-data all 1.2.11-1ubuntu0.3 [21.4 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasound2t64 amd64 1.2.11-1ubuntu0.3 [398 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 alsa-ucm-conf all 1.2.10-1ubuntu5.15 [70.5 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-common amd64 2.42-4ubuntu2.10 [240 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsframe1 amd64 2.42-4ubuntu2.10 [15.7 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbinutils amd64 2.42-4ubuntu2.10 [577 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf-nobfd0 amd64 2.42-4ubuntu2.10 [98.0 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.10 [94.5 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.10 [849 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.10 [2463 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils amd64 2.42-4ubuntu2.10 [18.2 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04.1 [51.6 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libisl23 amd64 0.26-3build1.1 [680 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmpc3 amd64 1.3.1-1build1.1 [54.6 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [10.7 MB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04.1 [1042 B]
+Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [5326 B]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp amd64 4:13.2.0-7ubuntu1 [22.4 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcc1-0 amd64 14.2.0-4ubuntu2~24.04.1 [48.0 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04.1 [148 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libitm1 amd64 14.2.0-4ubuntu2~24.04.1 [29.7 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04.1 [10.5 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasan8 amd64 14.2.0-4ubuntu2~24.04.1 [3027 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblsan0 amd64 14.2.0-4ubuntu2~24.04.1 [1322 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtsan2 amd64 14.2.0-4ubuntu2~24.04.1 [2772 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libubsan1 amd64 14.2.0-4ubuntu2~24.04.1 [1184 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libhwasan0 amd64 14.2.0-4ubuntu2~24.04.1 [1641 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libquadmath0 amd64 14.2.0-4ubuntu2~24.04.1 [153 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04.1 [2681 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [21.1 MB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04.1 [494 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [1212 B]
+Get:35 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc amd64 4:13.2.0-7ubuntu1 [5018 B]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++-13-dev amd64 13.3.0-6ubuntu2~24.04.1 [2420 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04.1 [12.2 MB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13 amd64 13.3.0-6ubuntu2~24.04.1 [16.0 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 g++-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [964 B]
+Get:40 http://archive.ubuntu.com/ubuntu noble/main amd64 g++ amd64 4:13.2.0-7ubuntu1 [1100 B]
+Get:41 http://archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.6 [268 kB]
+Get:43 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1ubuntu0.1 [34.6 kB]
+Get:44 http://archive.ubuntu.com/ubuntu noble/main amd64 lto-disabled-list all 47 [12.4 kB]
+Get:45 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg-dev all 1.22.6ubuntu6.6 [1074 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4928 B]
+Get:47 http://archive.ubuntu.com/ubuntu noble/main amd64 ca-certificates-java all 20240118 [11.6 kB]
+Get:48 http://archive.ubuntu.com/ubuntu noble/main amd64 libfakeroot amd64 1.33-1 [32.4 kB]
+Get:49 http://archive.ubuntu.com/ubuntu noble/main amd64 fakeroot amd64 1.33-1 [67.2 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble/main amd64 java-common all 0.75+exp1 [6798 B]
+Get:51 http://archive.ubuntu.com/ubuntu noble/main amd64 javascript-common all 11+nmu1 [5936 B]
+Get:52 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
+Get:53 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-xs-perl amd64 0.04-8build3 [11.2 kB]
+Get:54 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-merge-perl all 0.08-5 [11.4 kB]
+Get:55 http://archive.ubuntu.com/ubuntu noble/universe amd64 libapache-pom-java all 29-2 [5284 B]
+Get:56 http://archive.ubuntu.com/ubuntu noble/universe amd64 libatinject-jsr330-api-java all 1.0+ds1-5 [5348 B]
+Get:57 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libavahi-common-data amd64 0.8-13ubuntu6.2 [30.1 kB]
+Get:58 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libavahi-common3 amd64 0.8-13ubuntu6.2 [23.4 kB]
+Get:59 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libavahi-client3 amd64 0.8-13ubuntu6.2 [26.8 kB]
+Get:60 http://archive.ubuntu.com/ubuntu noble/universe amd64 libgeronimo-interceptor-3.0-spec-java all 1.0.1-4fakesync [8616 B]
+Get:61 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcdi-api-java all 1.2-3 [54.3 kB]
+Get:62 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcommons-cli-java all 1.6.0-1 [59.9 kB]
+Get:63 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcommons-parent-java all 56-1 [10.7 kB]
+Get:64 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcommons-io-java all 2.11.0-2 [297 kB]
+Get:65 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcommons-lang3-java all 3.14.0-1 [586 kB]
+Get:66 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcups2t64 amd64 2.4.7-1.2ubuntu7.14 [274 kB]
+Get:67 http://archive.ubuntu.com/ubuntu noble/universe amd64 libjsr305-java all 0.1~+svn49-11 [27.0 kB]
+Get:68 http://archive.ubuntu.com/ubuntu noble/universe amd64 libguava-java all 32.0.1-1 [2692 kB]
+Get:69 http://archive.ubuntu.com/ubuntu noble/universe amd64 liberror-prone-java all 2.18.0-1 [22.5 kB]
+Get:70 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1-dev amd64 2.6.1-2ubuntu0.6 [147 kB]
+Get:71 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5 [30.7 kB]
+Get:72 http://archive.ubuntu.com/ubuntu noble/universe amd64 libgeronimo-annotation-1.3-spec-java all 1.3-1 [11.2 kB]
+Get:73 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgraphite2-3 amd64 1.3.14-2ubuntu0.24.04.1 [73.4 kB]
+Get:74 http://archive.ubuntu.com/ubuntu noble/universe amd64 libaopalliance-java all 20070526-7 [8166 B]
+Get:75 http://archive.ubuntu.com/ubuntu noble/universe amd64 libguice-java all 4.2.3-2 [1434 kB]
+Get:76 http://archive.ubuntu.com/ubuntu noble/main amd64 libharfbuzz0b amd64 8.3.0-2build2 [469 kB]
+Get:77 http://archive.ubuntu.com/ubuntu noble/universe amd64 libjansi-java all 2.4.1-2 [83.0 kB]
+Get:78 http://archive.ubuntu.com/ubuntu noble/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [328 kB]
+Get:79 http://archive.ubuntu.com/ubuntu noble/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [118 kB]
+Get:80 http://archive.ubuntu.com/ubuntu noble/main amd64 libjs-sphinxdoc all 7.2.6-6 [149 kB]
+Get:81 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblcms2-2 amd64 2.14-2ubuntu0.1 [161 kB]
+Get:82 http://archive.ubuntu.com/ubuntu noble/universe amd64 libmaven-parent-java all 35-1 [5810 B]
+Get:83 http://archive.ubuntu.com/ubuntu noble/universe amd64 libplexus-utils2-java all 3.4.2-1 [256 kB]
+Get:84 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwagon-provider-api-java all 3.5.3-1 [47.9 kB]
+Get:85 http://archive.ubuntu.com/ubuntu noble/universe amd64 libmaven-resolver-java all 1.6.3-1 [544 kB]
+Get:86 http://archive.ubuntu.com/ubuntu noble/universe amd64 libmaven-shared-utils-java all 3.3.4-1 [137 kB]
+Get:87 http://archive.ubuntu.com/ubuntu noble/universe amd64 libplexus-cipher-java all 2.0-1 [14.7 kB]
+Get:88 http://archive.ubuntu.com/ubuntu noble/universe amd64 libplexus-classworlds-java all 2.7.0-1 [50.0 kB]
+Get:89 http://archive.ubuntu.com/ubuntu noble/universe amd64 libplexus-component-annotations-java all 2.1.1-1 [6550 B]
+Get:90 http://archive.ubuntu.com/ubuntu noble/universe amd64 libplexus-interpolation-java all 1.26-1 [76.8 kB]
+Get:91 http://archive.ubuntu.com/ubuntu noble/universe amd64 libplexus-sec-dispatcher-java all 2.0-3 [28.1 kB]
+Get:92 http://archive.ubuntu.com/ubuntu noble/universe amd64 libslf4j-java all 1.7.32-1 [141 kB]
+Get:93 http://archive.ubuntu.com/ubuntu noble/universe amd64 libsisu-inject-java all 0.3.4-2 [347 kB]
+Get:94 http://archive.ubuntu.com/ubuntu noble/universe amd64 libsisu-plexus-java all 0.3.4-3 [181 kB]
+Get:95 http://archive.ubuntu.com/ubuntu noble/universe amd64 libmaven3-core-java all 3.8.7-2 [1565 kB]
+Get:96 http://archive.ubuntu.com/ubuntu noble/main amd64 libpcsclite1 amd64 2.0.3-1build1 [21.4 kB]
+Get:97 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g-dev amd64 1:1.3.dfsg-3.1ubuntu2.3 [894 kB]
+Get:98 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5684 kB]
+Get:99 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-dev amd64 3.12.3-0ubuntu2.1 [10.3 kB]
+Get:100 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwagon-file-java all 3.5.3-1 [7918 B]
+Get:101 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwagon-http-shaded-java all 3.5.3-1 [1332 kB]
+Get:102 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openjdk-17-jre-headless amd64 17.0.20.1+1-1~24.04 [48.1 MB]
+Get:103 http://archive.ubuntu.com/ubuntu noble/universe amd64 maven all 3.8.7-2 [18.3 kB]
+Get:104 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openjdk-17-jdk-headless amd64 17.0.20.1+1-1~24.04 [71.6 MB]
+Get:105 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-dev amd64 3.12.3-1ubuntu0.17 [498 kB]
+Get:106 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-dev amd64 3.12.3-0ubuntu2.1 [26.7 kB]
+Get:107 http://archive.ubuntu.com/ubuntu noble/universe amd64 python3-wheel all 0.42.0-2 [53.1 kB]
+Get:108 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip all 24.0+dfsg-1ubuntu1.3 [1320 kB]
+Fetched 207 MB in 13s (15.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 75072 files and directories currently installed.)
+Preparing to unpack .../zlib1g_1%3a1.3.dfsg-3.1ubuntu2.3_amd64.deb ...
+Unpacking zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.3) over (1:1.3.dfsg-3.1ubuntu2.2) ...
+Setting up zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Selecting previously unselected package alsa-topology-conf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 75072 files and directories currently installed.)
+Preparing to unpack .../000-alsa-topology-conf_1.2.5.1-2_all.deb ...
+Unpacking alsa-topology-conf (1.2.5.1-2) ...
+Selecting previously unselected package libasound2-data.
+Preparing to unpack .../001-libasound2-data_1.2.11-1ubuntu0.3_all.deb ...
+Unpacking libasound2-data (1.2.11-1ubuntu0.3) ...
+Selecting previously unselected package libasound2t64:amd64.
+Preparing to unpack .../002-libasound2t64_1.2.11-1ubuntu0.3_amd64.deb ...
+Unpacking libasound2t64:amd64 (1.2.11-1ubuntu0.3) ...
+Selecting previously unselected package alsa-ucm-conf.
+Preparing to unpack .../003-alsa-ucm-conf_1.2.10-1ubuntu5.15_all.deb ...
+Unpacking alsa-ucm-conf (1.2.10-1ubuntu5.15) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../004-binutils-common_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking binutils-common:amd64 (2.42-4ubuntu2.10) ...
+Selecting previously unselected package libsframe1:amd64.
+Preparing to unpack .../005-libsframe1_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking libsframe1:amd64 (2.42-4ubuntu2.10) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../006-libbinutils_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking libbinutils:amd64 (2.42-4ubuntu2.10) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../007-libctf-nobfd0_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.42-4ubuntu2.10) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../008-libctf0_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking libctf0:amd64 (2.42-4ubuntu2.10) ...
+Selecting previously unselected package libgprofng0:amd64.
+Preparing to unpack .../009-libgprofng0_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking libgprofng0:amd64 (2.42-4ubuntu2.10) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../010-binutils-x86-64-linux-gnu_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.42-4ubuntu2.10) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../011-binutils_2.42-4ubuntu2.10_amd64.deb ...
+Unpacking binutils (2.42-4ubuntu2.10) ...
+Selecting previously unselected package gcc-13-base:amd64.
+Preparing to unpack .../012-gcc-13-base_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../013-libisl23_0.26-3build1.1_amd64.deb ...
+Unpacking libisl23:amd64 (0.26-3build1.1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../014-libmpc3_1.3.1-1build1.1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.3.1-1build1.1) ...
+Selecting previously unselected package cpp-13-x86-64-linux-gnu.
+Preparing to unpack .../015-cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package cpp-13.
+Preparing to unpack .../016-cpp-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking cpp-13 (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package cpp-x86-64-linux-gnu.
+Preparing to unpack .../017-cpp-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../018-cpp_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking cpp (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../019-libcc1-0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libcc1-0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../020-libgomp1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../021-libitm1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libitm1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../022-libatomic1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../023-libasan8_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libasan8:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../024-liblsan0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking liblsan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../025-libtsan2_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libtsan2:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../026-libubsan1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libubsan1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libhwasan0:amd64.
+Preparing to unpack .../027-libhwasan0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libhwasan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../028-libquadmath0_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libquadmath0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libgcc-13-dev:amd64.
+Preparing to unpack .../029-libgcc-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package gcc-13-x86-64-linux-gnu.
+Preparing to unpack .../030-gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package gcc-13.
+Preparing to unpack .../031-gcc-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking gcc-13 (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package gcc-x86-64-linux-gnu.
+Preparing to unpack .../032-gcc-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../033-gcc_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking gcc (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package libstdc++-13-dev:amd64.
+Preparing to unpack .../034-libstdc++-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package g++-13-x86-64-linux-gnu.
+Preparing to unpack .../035-g++-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package g++-13.
+Preparing to unpack .../036-g++-13_13.3.0-6ubuntu2~24.04.1_amd64.deb ...
+Unpacking g++-13 (13.3.0-6ubuntu2~24.04.1) ...
+Selecting previously unselected package g++-x86-64-linux-gnu.
+Preparing to unpack .../037-g++-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../038-g++_4%3a13.2.0-7ubuntu1_amd64.deb ...
+Unpacking g++ (4:13.2.0-7ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../039-make_4.3-4.1build2_amd64.deb ...
+Unpacking make (4.3-4.1build2) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../040-libdpkg-perl_1.22.6ubuntu6.6_all.deb ...
+Unpacking libdpkg-perl (1.22.6ubuntu6.6) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../041-bzip2_1.0.8-5.1ubuntu0.1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5.1ubuntu0.1) ...
+Selecting previously unselected package lto-disabled-list.
+Preparing to unpack .../042-lto-disabled-list_47_all.deb ...
+Unpacking lto-disabled-list (47) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../043-dpkg-dev_1.22.6ubuntu6.6_all.deb ...
+Unpacking dpkg-dev (1.22.6ubuntu6.6) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../044-build-essential_12.10ubuntu1_amd64.deb ...
+Unpacking build-essential (12.10ubuntu1) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../045-ca-certificates-java_20240118_all.deb ...
+Unpacking ca-certificates-java (20240118) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../046-libfakeroot_1.33-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.33-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../047-fakeroot_1.33-1_amd64.deb ...
+Unpacking fakeroot (1.33-1) ...
+Selecting previously unselected package java-common.
+Preparing to unpack .../048-java-common_0.75+exp1_all.deb ...
+Unpacking java-common (0.75+exp1) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../049-javascript-common_11+nmu1_all.deb ...
+Unpacking javascript-common (11+nmu1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../050-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl:amd64.
+Preparing to unpack .../051-libalgorithm-diff-xs-perl_0.04-8build3_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../052-libalgorithm-merge-perl_0.08-5_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-5) ...
+Selecting previously unselected package libapache-pom-java.
+Preparing to unpack .../053-libapache-pom-java_29-2_all.deb ...
+Unpacking libapache-pom-java (29-2) ...
+Selecting previously unselected package libatinject-jsr330-api-java.
+Preparing to unpack .../054-libatinject-jsr330-api-java_1.0+ds1-5_all.deb ...
+Unpacking libatinject-jsr330-api-java (1.0+ds1-5) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Preparing to unpack .../055-libavahi-common-data_0.8-13ubuntu6.2_amd64.deb ...
+Unpacking libavahi-common-data:amd64 (0.8-13ubuntu6.2) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Preparing to unpack .../056-libavahi-common3_0.8-13ubuntu6.2_amd64.deb ...
+Unpacking libavahi-common3:amd64 (0.8-13ubuntu6.2) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Preparing to unpack .../057-libavahi-client3_0.8-13ubuntu6.2_amd64.deb ...
+Unpacking libavahi-client3:amd64 (0.8-13ubuntu6.2) ...
+Selecting previously unselected package libgeronimo-interceptor-3.0-spec-java.
+Preparing to unpack .../058-libgeronimo-interceptor-3.0-spec-java_1.0.1-4fakesync_all.deb ...
+Unpacking libgeronimo-interceptor-3.0-spec-java (1.0.1-4fakesync) ...
+Selecting previously unselected package libcdi-api-java.
+Preparing to unpack .../059-libcdi-api-java_1.2-3_all.deb ...
+Unpacking libcdi-api-java (1.2-3) ...
+Selecting previously unselected package libcommons-cli-java.
+Preparing to unpack .../060-libcommons-cli-java_1.6.0-1_all.deb ...
+Unpacking libcommons-cli-java (1.6.0-1) ...
+Selecting previously unselected package libcommons-parent-java.
+Preparing to unpack .../061-libcommons-parent-java_56-1_all.deb ...
+Unpacking libcommons-parent-java (56-1) ...
+Selecting previously unselected package libcommons-io-java.
+Preparing to unpack .../062-libcommons-io-java_2.11.0-2_all.deb ...
+Unpacking libcommons-io-java (2.11.0-2) ...
+Selecting previously unselected package libcommons-lang3-java.
+Preparing to unpack .../063-libcommons-lang3-java_3.14.0-1_all.deb ...
+Unpacking libcommons-lang3-java (3.14.0-1) ...
+Selecting previously unselected package libcups2t64:amd64.
+Preparing to unpack .../064-libcups2t64_2.4.7-1.2ubuntu7.14_amd64.deb ...
+Unpacking libcups2t64:amd64 (2.4.7-1.2ubuntu7.14) ...
+Selecting previously unselected package libjsr305-java.
+Preparing to unpack .../065-libjsr305-java_0.1~+svn49-11_all.deb ...
+Unpacking libjsr305-java (0.1~+svn49-11) ...
+Selecting previously unselected package libguava-java.
+Preparing to unpack .../066-libguava-java_32.0.1-1_all.deb ...
+Unpacking libguava-java (32.0.1-1) ...
+Selecting previously unselected package liberror-prone-java.
+Preparing to unpack .../067-liberror-prone-java_2.18.0-1_all.deb ...
+Unpacking liberror-prone-java (2.18.0-1) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../068-libexpat1-dev_2.6.1-2ubuntu0.6_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.6.1-2ubuntu0.6) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../069-libfile-fcntllock-perl_0.22-4ubuntu5_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-4ubuntu5) ...
+Selecting previously unselected package libgeronimo-annotation-1.3-spec-java.
+Preparing to unpack .../070-libgeronimo-annotation-1.3-spec-java_1.3-1_all.deb ...
+Unpacking libgeronimo-annotation-1.3-spec-java (1.3-1) ...
+Selecting previously unselected package libgraphite2-3:amd64.
+Preparing to unpack .../071-libgraphite2-3_1.3.14-2ubuntu0.24.04.1_amd64.deb ...
+Unpacking libgraphite2-3:amd64 (1.3.14-2ubuntu0.24.04.1) ...
+Selecting previously unselected package libaopalliance-java.
+Preparing to unpack .../072-libaopalliance-java_20070526-7_all.deb ...
+Unpacking libaopalliance-java (20070526-7) ...
+Selecting previously unselected package libguice-java.
+Preparing to unpack .../073-libguice-java_4.2.3-2_all.deb ...
+Unpacking libguice-java (4.2.3-2) ...
+Selecting previously unselected package libharfbuzz0b:amd64.
+Preparing to unpack .../074-libharfbuzz0b_8.3.0-2build2_amd64.deb ...
+Unpacking libharfbuzz0b:amd64 (8.3.0-2build2) ...
+Selecting previously unselected package libjansi-java.
+Preparing to unpack .../075-libjansi-java_2.4.1-2_all.deb ...
+Unpacking libjansi-java (2.4.1-2) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../076-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../077-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../078-libjs-sphinxdoc_7.2.6-6_all.deb ...
+Unpacking libjs-sphinxdoc (7.2.6-6) ...
+Selecting previously unselected package liblcms2-2:amd64.
+Preparing to unpack .../079-liblcms2-2_2.14-2ubuntu0.1_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.14-2ubuntu0.1) ...
+Selecting previously unselected package libmaven-parent-java.
+Preparing to unpack .../080-libmaven-parent-java_35-1_all.deb ...
+Unpacking libmaven-parent-java (35-1) ...
+Selecting previously unselected package libplexus-utils2-java.
+Preparing to unpack .../081-libplexus-utils2-java_3.4.2-1_all.deb ...
+Unpacking libplexus-utils2-java (3.4.2-1) ...
+Selecting previously unselected package libwagon-provider-api-java.
+Preparing to unpack .../082-libwagon-provider-api-java_3.5.3-1_all.deb ...
+Unpacking libwagon-provider-api-java (3.5.3-1) ...
+Selecting previously unselected package libmaven-resolver-java.
+Preparing to unpack .../083-libmaven-resolver-java_1.6.3-1_all.deb ...
+Unpacking libmaven-resolver-java (1.6.3-1) ...
+Selecting previously unselected package libmaven-shared-utils-java.
+Preparing to unpack .../084-libmaven-shared-utils-java_3.3.4-1_all.deb ...
+Unpacking libmaven-shared-utils-java (3.3.4-1) ...
+Selecting previously unselected package libplexus-cipher-java.
+Preparing to unpack .../085-libplexus-cipher-java_2.0-1_all.deb ...
+Unpacking libplexus-cipher-java (2.0-1) ...
+Selecting previously unselected package libplexus-classworlds-java.
+Preparing to unpack .../086-libplexus-classworlds-java_2.7.0-1_all.deb ...
+Unpacking libplexus-classworlds-java (2.7.0-1) ...
+Selecting previously unselected package libplexus-component-annotations-java.
+Preparing to unpack .../087-libplexus-component-annotations-java_2.1.1-1_all.deb ...
+Unpacking libplexus-component-annotations-java (2.1.1-1) ...
+Selecting previously unselected package libplexus-interpolation-java.
+Preparing to unpack .../088-libplexus-interpolation-java_1.26-1_all.deb ...
+Unpacking libplexus-interpolation-java (1.26-1) ...
+Selecting previously unselected package libplexus-sec-dispatcher-java.
+Preparing to unpack .../089-libplexus-sec-dispatcher-java_2.0-3_all.deb ...
+Unpacking libplexus-sec-dispatcher-java (2.0-3) ...
+Selecting previously unselected package libslf4j-java.
+Preparing to unpack .../090-libslf4j-java_1.7.32-1_all.deb ...
+Unpacking libslf4j-java (1.7.32-1) ...
+Selecting previously unselected package libsisu-inject-java.
+Preparing to unpack .../091-libsisu-inject-java_0.3.4-2_all.deb ...
+Unpacking libsisu-inject-java (0.3.4-2) ...
+Selecting previously unselected package libsisu-plexus-java.
+Preparing to unpack .../092-libsisu-plexus-java_0.3.4-3_all.deb ...
+Unpacking libsisu-plexus-java (0.3.4-3) ...
+Selecting previously unselected package libmaven3-core-java.
+Preparing to unpack .../093-libmaven3-core-java_3.8.7-2_all.deb ...
+Unpacking libmaven3-core-java (3.8.7-2) ...
+Selecting previously unselected package libpcsclite1:amd64.
+Preparing to unpack .../094-libpcsclite1_2.0.3-1build1_amd64.deb ...
+Unpacking libpcsclite1:amd64 (2.0.3-1build1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../095-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.3_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Selecting previously unselected package libpython3.12-dev:amd64.
+Preparing to unpack .../096-libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb ...
+Unpacking libpython3.12-dev:amd64 (3.12.3-1ubuntu0.17) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../097-libpython3-dev_3.12.3-0ubuntu2.1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.12.3-0ubuntu2.1) ...
+Selecting previously unselected package libwagon-file-java.
+Preparing to unpack .../098-libwagon-file-java_3.5.3-1_all.deb ...
+Unpacking libwagon-file-java (3.5.3-1) ...
+Selecting previously unselected package libwagon-http-shaded-java.
+Preparing to unpack .../099-libwagon-http-shaded-java_3.5.3-1_all.deb ...
+Unpacking libwagon-http-shaded-java (3.5.3-1) ...
+Selecting previously unselected package openjdk-17-jre-headless:amd64.
+Preparing to unpack .../100-openjdk-17-jre-headless_17.0.20.1+1-1~24.04_amd64.deb ...
+Unpacking openjdk-17-jre-headless:amd64 (17.0.20.1+1-1~24.04) ...
+Selecting previously unselected package maven.
+Preparing to unpack .../101-maven_3.8.7-2_all.deb ...
+Unpacking maven (3.8.7-2) ...
+Selecting previously unselected package openjdk-17-jdk-headless:amd64.
+Preparing to unpack .../102-openjdk-17-jdk-headless_17.0.20.1+1-1~24.04_amd64.deb ...
+Unpacking openjdk-17-jdk-headless:amd64 (17.0.20.1+1-1~24.04) ...
+Selecting previously unselected package python3.12-dev.
+Preparing to unpack .../103-python3.12-dev_3.12.3-1ubuntu0.17_amd64.deb ...
+Unpacking python3.12-dev (3.12.3-1ubuntu0.17) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../104-python3-dev_3.12.3-0ubuntu2.1_amd64.deb ...
+Unpacking python3-dev (3.12.3-0ubuntu2.1) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../105-python3-wheel_0.42.0-2_all.deb ...
+Unpacking python3-wheel (0.42.0-2) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../106-python3-pip_24.0+dfsg-1ubuntu1.3_all.deb ...
+Unpacking python3-pip (24.0+dfsg-1ubuntu1.3) ...
+Setting up javascript-common (11+nmu1) ...
+Setting up libgraphite2-3:amd64 (1.3.14-2ubuntu0.24.04.1) ...
+Setting up liblcms2-2:amd64 (2.14-2ubuntu0.1) ...
+Setting up libslf4j-java (1.7.32-1) ...
+Setting up libplexus-utils2-java (3.4.2-1) ...
+Setting up lto-disabled-list (47) ...
+Setting up libplexus-classworlds-java (2.7.0-1) ...
+Setting up libjsr305-java (0.1~+svn49-11) ...
+Setting up java-common (0.75+exp1) ...
+Setting up libaopalliance-java (20070526-7) ...
+Setting up libcommons-cli-java (1.6.0-1) ...
+Setting up libfile-fcntllock-perl (0.22-4ubuntu5) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up binutils-common:amd64 (2.42-4ubuntu2.10) ...
+Setting up libctf-nobfd0:amd64 (2.42-4ubuntu2.10) ...
+Setting up libplexus-component-annotations-java (2.1.1-1) ...
+Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up bzip2 (1.0.8-5.1ubuntu0.1) ...
+Setting up python3-wheel (0.42.0-2) ...
+Setting up libsframe1:amd64 (2.42-4ubuntu2.10) ...
+Setting up libfakeroot:amd64 (1.33-1) ...
+Setting up fakeroot (1.33-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libgeronimo-annotation-1.3-spec-java (1.3-1) ...
+Setting up libgeronimo-interceptor-3.0-spec-java (1.0.1-4fakesync) ...
+Setting up libasound2-data (1.2.11-1ubuntu0.3) ...
+Setting up libasound2t64:amd64 (1.2.11-1ubuntu0.3) ...
+Setting up gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+Setting up libexpat1-dev:amd64 (2.6.1-2ubuntu0.6) ...
+Setting up make (4.3-4.1build2) ...
+Setting up libjansi-java (2.4.1-2) ...
+Setting up libapache-pom-java (29-2) ...
+Setting up libavahi-common-data:amd64 (0.8-13ubuntu6.2) ...
+Setting up libatinject-jsr330-api-java (1.0+ds1-5) ...
+Setting up libquadmath0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libplexus-interpolation-java (1.26-1) ...
+Setting up libmpc3:amd64 (1.3.1-1build1.1) ...
+Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libpcsclite1:amd64 (2.0.3-1build1) ...
+Setting up python3-pip (24.0+dfsg-1ubuntu1.3) ...
+Setting up libdpkg-perl (1.22.6ubuntu6.6) ...
+Setting up libubsan1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Setting up alsa-topology-conf (1.2.5.1-2) ...
+Setting up libhwasan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libasan8:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libharfbuzz0b:amd64 (8.3.0-2build2) ...
+Setting up libwagon-http-shaded-java (3.5.3-1) ...
+Setting up libtsan2:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up ca-certificates-java (20240118) ...
+No JRE found. Skipping Java certificates setup.
+Setting up libbinutils:amd64 (2.42-4ubuntu2.10) ...
+Setting up libisl23:amd64 (0.26-3build1.1) ...
+Setting up libcdi-api-java (1.2-3) ...
+Setting up libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
+Setting up libcc1-0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up liblsan0:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libitm1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up libalgorithm-merge-perl (0.08-5) ...
+Setting up libctf0:amd64 (2.42-4ubuntu2.10) ...
+Setting up libwagon-provider-api-java (3.5.3-1) ...
+Setting up alsa-ucm-conf (1.2.10-1ubuntu5.15) ...
+Setting up cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+Setting up libmaven-parent-java (35-1) ...
+Setting up libcommons-parent-java (56-1) ...
+Setting up libavahi-common3:amd64 (0.8-13ubuntu6.2) ...
+Setting up libsisu-inject-java (0.3.4-2) ...
+Setting up libpython3.12-dev:amd64 (3.12.3-1ubuntu0.17) ...
+Setting up libplexus-cipher-java (2.0-1) ...
+Setting up libsisu-plexus-java (0.3.4-3) ...
+Setting up libgprofng0:amd64 (2.42-4ubuntu2.10) ...
+Setting up python3.12-dev (3.12.3-1ubuntu0.17) ...
+Setting up libjs-sphinxdoc (7.2.6-6) ...
+Setting up libcommons-lang3-java (3.14.0-1) ...
+Setting up openjdk-17-jre-headless:amd64 (17.0.20.1+1-1~24.04) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+Setting up libplexus-sec-dispatcher-java (2.0-3) ...
+Setting up libwagon-file-java (3.5.3-1) ...
+Setting up libavahi-client3:amd64 (0.8-13ubuntu6.2) ...
+Setting up libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04.1) ...
+Setting up binutils-x86-64-linux-gnu (2.42-4ubuntu2.10) ...
+Setting up cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up libpython3-dev:amd64 (3.12.3-0ubuntu2.1) ...
+Setting up cpp-13 (13.3.0-6ubuntu2~24.04.1) ...
+Setting up libcommons-io-java (2.11.0-2) ...
+Setting up gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+Setting up binutils (2.42-4ubuntu2.10) ...
+Setting up dpkg-dev (1.22.6ubuntu6.6) ...
+Setting up libmaven-resolver-java (1.6.3-1) ...
+Setting up python3-dev (3.12.3-0ubuntu2.1) ...
+Setting up gcc-13 (13.3.0-6ubuntu2~24.04.1) ...
+Setting up cpp (4:13.2.0-7ubuntu1) ...
+Setting up libmaven-shared-utils-java (3.3.4-1) ...
+Setting up libcups2t64:amd64 (2.4.7-1.2ubuntu7.14) ...
+Setting up g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04.1) ...
+Setting up gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up gcc (4:13.2.0-7ubuntu1) ...
+Setting up g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
+Setting up g++-13 (13.3.0-6ubuntu2~24.04.1) ...
+Setting up g++ (4:13.2.0-7ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.10ubuntu1) ...
+Setting up libguava-java (32.0.1-1) ...
+Setting up liberror-prone-java (2.18.0-1) ...
+Setting up libguice-java (4.2.3-2) ...
+Setting up libmaven3-core-java (3.8.7-2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ca-certificates-java (20240118) ...
+Adding debian:ACCVRAIZ1.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+Adding debian:ANF_Secure_Server_Root_CA.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:BJCA_Global_Root_CA1.pem
+Adding debian:BJCA_Global_Root_CA2.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:Certainly_Root_E1.pem
+Adding debian:Certainly_Root_R1.pem
+Adding debian:Certigna_Root_CA.pem
+Adding debian:Certum_EC-384_CA.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:Certum_Trusted_Root_CA.pem
+Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+Adding debian:D-TRUST_BR_Root_CA_2_2023.pem
+Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+Adding debian:D-TRUST_EV_Root_CA_2_2023.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Adding debian:GTS_Root_R1.pem
+Adding debian:GTS_Root_R3.pem
+Adding debian:GTS_Root_R4.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:GlobalSign_Root_CA_-_R6.pem
+Adding debian:GlobalSign_Root_E46.pem
+Adding debian:GlobalSign_Root_R46.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:HiPKI_Root_CA_-_G1.pem
+Adding debian:Hongkong_Post_Root_CA_3.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:ISRG_Root_X2.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:Izenpe.com.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:OISTE_Server_Root_ECC_G1.pem
+Adding debian:OISTE_Server_Root_RSA_G1.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+Adding debian:SecureSign_Root_CA12.pem
+Adding debian:SecureSign_Root_CA14.pem
+Adding debian:SecureSign_Root_CA15.pem
+Adding debian:Security_Communication_ECC_RootCA1.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:SwissSign_RSA_TLS_Root_CA_2022_-_1.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:TWCA_CYBER_Root_CA.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+Adding debian:Telekom_Security_TLS_RSA_Root_2023.pem
+Adding debian:Telia_Root_CA_v2.pem
+Adding debian:TrustAsia_Global_Root_CA_G3.pem
+Adding debian:TrustAsia_Global_Root_CA_G4.pem
+Adding debian:TrustAsia_TLS_ECC_Root_CA.pem
+Adding debian:TrustAsia_TLS_RSA_Root_CA.pem
+Adding debian:TunTrust_Root_CA.pem
+Adding debian:UCA_Extended_Validation_Root.pem
+Adding debian:UCA_Global_G2_Root.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:certSIGN_Root_CA_G2.pem
+Adding debian:e-Szigno_Root_CA_2017.pem
+Adding debian:e-Szigno_TLS_Root_CA_2023.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Adding debian:emSign_Root_CA_-_C1.pem
+Adding debian:emSign_Root_CA_-_G1.pem
+Adding debian:vTrus_ECC_Root_CA.pem
+Adding debian:vTrus_Root_CA.pem
+done.
+Setting up maven (3.8.7-2) ...
+update-alternatives: using /usr/share/maven/bin/mvn to provide /usr/bin/mvn (mvn) in auto mode
+Setting up openjdk-17-jdk-headless:amd64 (17.0.20.1+1-1~24.04) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ systemctl restart packagekit.service polkit.service rsyslog.service ssh.service udisks2.service
+
+Service restarts being deferred:
+ systemctl restart ModemManager.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 1% (79.81MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 2% (74.62MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 3% (78.16MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 4% (79.10MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 5% (81.42MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 6% (80.99MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 7% (81.71MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 8% (79.54MB/s)                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 9% (78.97MB/s)Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 10% (78.12MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 10% (77.82MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 11% (77.19MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 12% (77.54MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 13% (77.61MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 14% (76.24MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 15% (75.70MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 16% (75.91MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 17% (75.89MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 18% (75.83MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 19% (76.34MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 19% (76.65MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 20% (77.45MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 21% (78.03MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 22% (78.66MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 23% (78.37MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 24% (78.73MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 25% (79.07MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 26% (79.23MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 27% (79.64MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 28% (80.05MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 28% (80.26MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 29% (80.32MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 30% (80.40MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 31% (80.62MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 32% (80.46MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 33% (79.94MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 34% (79.74MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 35% (78.80MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 36% (78.42MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 37% (78.13MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 37% (77.52MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 38% (76.96MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 39% (76.57MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 40% (76.70MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 41% (76.04MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 42% (75.84MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 43% (75.82MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 44% (75.92MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 45% (75.98MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 46% (75.90MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 46% (76.01MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 47% (76.26MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 48% (76.06MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 49% (75.55MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 50% (75.10MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 51% (74.96MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 52% (74.63MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 53% (74.59MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 54% (74.41MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 55% (74.31MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 56% (74.02MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 56% (73.75MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 57% (73.37MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 58% (73.18MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 59% (72.98MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 60% (72.84MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 61% (72.65MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 62% (72.48MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 63% (72.36MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 64% (72.31MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 65% (72.28MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 65% (72.28MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 66% (72.26MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 67% (72.28MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 68% (72.30MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 69% (72.25MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 70% (72.18MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 71% (72.17MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 72% (72.17MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 73% (72.09MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 74% (72.08MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 74% (72.08MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 75% (71.93MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 76% (71.91MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 77% (71.79MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 78% (71.63MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 79% (71.64MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 80% (71.35MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 81% (71.23MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 82% (71.07MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 83% (70.95MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 83% (70.90MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 84% (70.81MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 85% (70.66MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 86% (70.52MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 87% (70.40MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 88% (70.21MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 89% (70.20MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 90% (70.27MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 91% (70.17MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 92% (70.14MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 92% (70.05MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 93% (69.87MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 94% (69.75MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 95% (69.97MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 96% (70.04MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 97% (70.12MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 98% (70.20MB/s)                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 99% (70.22MB/s)Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-3.5.0.tar.gz to /home/ubuntu/hadoop-3.5.0.tar.gz: 100% (70.15MB/s)                                                                                                                   Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 1% (55.92MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 2% (58.13MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 3% (60.54MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 4% (61.64MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 5% (60.32MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 6% (60.34MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 7% (60.18MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 8% (59.74MB/s)                                                                                                                                 Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 9% (59.79MB/s)Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 10% (59.99MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 10% (59.96MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 11% (60.14MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 12% (60.05MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 13% (60.05MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 14% (60.27MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 15% (59.94MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 16% (59.83MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 17% (59.99MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 18% (59.78MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 19% (59.61MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 19% (59.48MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 20% (59.49MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 21% (59.81MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 22% (60.02MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 23% (60.21MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 24% (60.87MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 25% (61.17MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 26% (61.75MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 27% (62.20MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 28% (62.89MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 28% (63.46MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 29% (63.73MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 30% (63.69MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 31% (63.63MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 32% (63.41MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 33% (60.81MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 34% (61.18MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 35% (61.11MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 36% (61.04MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 37% (61.06MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 38% (61.01MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 38% (61.13MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 39% (61.45MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 40% (61.85MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 41% (62.36MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 42% (62.91MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 43% (63.38MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 44% (63.78MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 45% (63.97MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 46% (64.36MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 47% (64.66MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 47% (61.35MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 48% (61.28MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 49% (61.16MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 50% (61.03MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 51% (61.19MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 52% (59.93MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 53% (59.76MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 54% (59.68MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 55% (59.62MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 56% (59.54MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 56% (59.49MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 57% (59.30MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 58% (59.08MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 59% (58.94MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 60% (58.86MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 61% (58.92MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 62% (59.09MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 63% (59.22MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 64% (59.33MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 65% (59.54MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 65% (59.64MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 66% (59.68MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 67% (59.75MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 68% (58.54MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 69% (58.60MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 70% (58.64MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 71% (58.68MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 72% (58.61MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 73% (58.50MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 74% (58.56MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 75% (58.61MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 75% (58.61MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 76% (58.70MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 77% (58.81MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 78% (59.10MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 79% (59.12MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 80% (59.14MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 81% (59.21MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 82% (59.18MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 83% (59.24MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 84% (59.38MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 84% (59.47MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 85% (59.63MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 86% (59.88MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 87% (59.08MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 88% (58.50MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 89% (58.38MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 90% (58.38MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 91% (58.49MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 92% (58.47MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 93% (58.10MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 93% (58.08MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 94% (58.12MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 95% (58.08MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 96% (57.71MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 97% (57.82MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 98% (57.95MB/s)                                                                                                                                  Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 99% (57.99MB/s)Pushing /var/lib/snapd/hostfs/home/cc/dl/spark-4.2.0-bin-hadoop3.tgz to /home/ubuntu/spark-4.2.0-bin-hadoop3.tgz: 100% (58.05MB/s)                                                                                                                                   Pushing /var/lib/snapd/hostfs/home/cc/dl/hadoop-profile.sh to /etc/profile.d/hadoop.sh: 100% (812.12MB/s)                                                                                                          

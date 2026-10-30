@@ -1,0 +1,184 @@
+Configured Capacity: 347481243648 (323.62 GB)
+Present Capacity: 347347025920 (323.49 GB)
+DFS Remaining: 346661384192 (322.85 GB)
+DFS Used: 685641728 (653.88 MB)
+DFS Used%: 0.20%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (8):
+
+Name: 10.163.246.11:9866 (small1)
+Hostname: small1
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 50659328 (48.31 MB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43367718912 (40.39 GB)
+DFS Used%: 0.12%
+DFS Remaining%: 99.84%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:46:44 UTC 2026
+Num of Blocks: 5
+
+
+Name: 10.163.246.12:9866 (small2)
+Hostname: small2
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 210690048 (200.93 MB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43207688192 (40.24 GB)
+DFS Used%: 0.49%
+DFS Remaining%: 99.48%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:44:59 UTC 2026
+Num of Blocks: 4
+
+
+Name: 10.163.246.13:9866 (small3)
+Hostname: small3
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 217088 (212 KB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43418161152 (40.44 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 99.96%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:44:59 UTC 2026
+Num of Blocks: 2
+
+
+Name: 10.163.246.14:9866 (small4)
+Hostname: small4
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 135479296 (129.20 MB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43282898944 (40.31 GB)
+DFS Used%: 0.31%
+DFS Remaining%: 99.65%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:44:59 UTC 2026
+Num of Blocks: 3
+
+
+Name: 10.163.246.15:9866 (small5)
+Hostname: small5
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 163840 (160 KB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43418214400 (40.44 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 99.96%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:44:59 UTC 2026
+Num of Blocks: 1
+
+
+Name: 10.163.246.16:9866 (small6)
+Hostname: small6
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 647168 (632 KB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43417731072 (40.44 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 99.96%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:44:59 UTC 2026
+Num of Blocks: 4
+
+
+Name: 10.163.246.17:9866 (small7)
+Hostname: small7
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 151871488 (144.84 MB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43266506752 (40.30 GB)
+DFS Used%: 0.35%
+DFS Remaining%: 99.61%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:44:59 UTC 2026
+Num of Blocks: 7
+
+
+Name: 10.163.246.18:9866 (small8)
+Hostname: small8
+Decommission Status : Normal
+Configured Capacity: 43435155456 (40.45 GB)
+DFS Used: 135913472 (129.62 MB)
+Non DFS Used: 0 (0 B)
+DFS Remaining: 43282464768 (40.31 GB)
+DFS Used%: 0.31%
+DFS Remaining%: 99.65%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Fri Oct 30 16:24:35 UTC 2026
+Last Block Report: Fri Oct 30 15:45:02 UTC 2026
+Num of Blocks: 7
+
+

@@ -1,0 +1,10 @@
+Total Nodes:8
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+    small6:42821	        RUNNING	      small6:8042	                           0
+    small2:33387	        RUNNING	      small2:8042	                           0
+    small4:43209	        RUNNING	      small4:8042	                           0
+    small3:43061	        RUNNING	      small3:8042	                           0
+    small1:42661	        RUNNING	      small1:8042	                           0
+    small7:41623	        RUNNING	      small7:8042	                           0
+    small5:39097	        RUNNING	      small5:8042	                           0
+    small8:36913	        RUNNING	      small8:8042	                           0
