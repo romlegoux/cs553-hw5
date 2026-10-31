@@ -1,0 +1,25 @@
+input 16GB checksum: 4c4bfd815781f6b
+terasort 16GB r1: 139.79s checksum_ok=yes
+terasort 16GB r2: 141.32s checksum_ok=yes
+terasort 16GB r3: 144.60s checksum_ok=yes
+mrsort 16GB r1: 148.19s checksum_ok=yes
+mrsort 16GB r2: 143.77s checksum_ok=yes
+mrsort 16GB r3: 143.32s checksum_ok=yes
+sparksort 16GB r1: 128.02s checksum_ok=yes
+sparksort 16GB r2: 127.11s checksum_ok=yes
+sparksort 16GB r3: 130.62s checksum_ok=yes
+input 32GB checksum: 989855bd93eb6b8
+terasort 32GB r1: 319.55s checksum_ok=yes
+terasort 32GB r2: 319.47s checksum_ok=yes
+terasort 32GB r3: 332.98s checksum_ok=yes
+mrsort 32GB r1: 330.00s checksum_ok=yes
+mrsort 32GB r2: 337.32s checksum_ok=yes
+mrsort 32GB r3: 333.40s checksum_ok=yes
+sparksort 32GB r1: 254.00s checksum_ok=yes
+sparksort 32GB r2: 257.12s checksum_ok=yes
+sparksort 32GB r3: 256.11s checksum_ok=yes
+cat: `/tera/valin64/part-r-00000': No such file or directory
+input 64GB checksum: 
+terasort 64GB r1: 780.01s checksum_ok=no
+mrsort 64GB r1: 807.97s checksum_ok=no
+sparksort 64GB r1: 633.99s checksum_ok=no
