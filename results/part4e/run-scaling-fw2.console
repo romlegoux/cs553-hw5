@@ -1,0 +1,42 @@
+== 8 NodeManagers running ==
+== 8 NodeManagers running ==
+strong fw2 mapreduce N=8 r1: 95.35s
+strong fw2 mapreduce N=8 r2: 92.68s
+strong fw2 mapreduce N=8 r3: 91.91s
+strong fw2 spark N=8 r1: 80.82s
+strong fw2 spark N=8 r2: 78.74s
+strong fw2 spark N=8 r3: 83.32s
+== 4 NodeManagers running ==
+strong fw2 mapreduce N=4 r1: 100.97s
+strong fw2 mapreduce N=4 r2: 112.32s
+strong fw2 mapreduce N=4 r3: 106.31s
+weak fw4 mapreduce N=4 r1: 236.82s
+weak fw4 mapreduce N=4 r2: 241.93s
+weak fw4 mapreduce N=4 r3: 243.23s
+strong fw2 spark N=4 r1: 84.53s
+strong fw2 spark N=4 r2: 93.03s
+strong fw2 spark N=4 r3: 78.24s
+weak fw4 spark N=4 r1: 178.44s
+weak fw4 spark N=4 r2: 170.06s
+weak fw4 spark N=4 r3: 185.58s
+== 2 NodeManagers running ==
+strong fw2 mapreduce N=2 r1: 174.75s
+strong fw2 mapreduce N=2 r2: 166.78s
+strong fw2 mapreduce N=2 r3: 176.30s
+strong fw2 spark N=2 r1: 107.41s
+strong fw2 spark N=2 r2: 106.00s
+strong fw2 spark N=2 r3: 105.04s
+== 1 NodeManagers running ==
+strong fw2 mapreduce N=1 r1: 276.44s
+strong fw2 mapreduce N=1 r2: 293.82s
+strong fw2 mapreduce N=1 r3: 284.08s
+weak fw1 mapreduce N=1 r1: 172.91s
+weak fw1 mapreduce N=1 r2: 171.78s
+weak fw1 mapreduce N=1 r3: 168.81s
+strong fw2 spark N=1 r1: 173.53s
+strong fw2 spark N=1 r2: 183.11s
+strong fw2 spark N=1 r3: 179.98s
+weak fw1 spark N=1 r1: 88.31s
+weak fw1 spark N=1 r2: 87.45s
+weak fw1 spark N=1 r3: 90.32s
+== 8 NodeManagers running ==
