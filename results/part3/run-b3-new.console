@@ -1,0 +1,13 @@
+B3 spark fw1 r1: 78.39s
+B3 spark fw1 r2: 83.26s
+B3 spark fw1 r3: 77.60s
+B3 spark fw8 r1: 404.93s
+B3 spark fw8 r2: 432.92s
+B3 spark fw8 r3: 424.34s
+B3 spark fw15 r1: 1127.42s
+B4 spark fw15 r1: 23.73s
+B4 spark fw15 r2: 24.45s
+B4 spark fw15 r3: 24.60s
+cat: `/pipe/b4/fw15/funnel/part-*': No such file or directory
+cat: `/pipe/b4/fw15/top_domains/part-*': No such file or directory
+cat: `/pipe/b4/fw15/tokens_per_dump/part-*': No such file or directory

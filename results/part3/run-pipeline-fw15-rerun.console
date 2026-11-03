@@ -1,0 +1,9 @@
+B2 spark fw15 r1: 642.02s
+B2 fw15 MR vs Spark agree: yes
+B3 spark fw15 r1: 2267.68s
+B4 spark fw15 r1: 65.43s
+B4 spark fw15 r2: 22.93s
+B4 spark fw15 r3: 22.56s
+cat: `/pipe/b4/fw15/funnel/part-*': No such file or directory
+cat: `/pipe/b4/fw15/top_domains/part-*': No such file or directory
+cat: `/pipe/b4/fw15/tokens_per_dump/part-*': No such file or directory

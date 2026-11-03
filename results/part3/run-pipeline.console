@@ -1,0 +1,44 @@
+B0 spark fw8 r1: 137.97s
+B0 spark fw8 r2: 136.92s
+B0 spark fw8 r3: 135.67s
+B1 mapreduce fw8 r1: 255.63s
+B1 mapreduce fw8 r2: 260.41s
+B1 mapreduce fw8 r3: 259.00s
+B1 spark fw8 r1: 88.11s
+B1 spark fw8 r2: 87.22s
+B1 spark fw8 r3: 88.11s
+B1 fw8 MR vs Spark agree: yes
+B2 mapreduce fw8 r1: 259.47s
+B2 mapreduce fw8 r2: 260.54s
+B2 mapreduce fw8 r3: 274.27s
+B2 spark fw8 r1: 208.30s
+B2 spark fw8 r2: 204.04s
+B2 spark fw8 r3: 207.36s
+B2 fw8 MR vs Spark agree: yes
+B3 spark fw8 r1: 559.89s
+B3 spark fw8 r2: 621.64s
+B3 spark fw8 r3: 718.57s
+B4 spark fw8 r1: 152.09s
+B4 spark fw8 r2: 152.33s
+B4 spark fw8 r3: 152.52s
+B0 spark fw15 r1: 268.37s
+B0 spark fw15 r2: 285.80s
+B0 spark fw15 r3: 286.53s
+B1 mapreduce fw15 r1: 444.42s
+B1 mapreduce fw15 r2: 447.82s
+B1 mapreduce fw15 r3: 441.90s
+B1 spark fw15 r1: 133.70s
+B1 spark fw15 r2: 135.40s
+B1 spark fw15 r3: 136.62s
+B1 fw15 MR vs Spark agree: yes
+B2 mapreduce fw15 r1: 724.41s
+B2 spark fw15 r1: 728.97s
+cat: `/pipe/b2spark/fw15/part-*': No such file or directory
+B2 fw15 MR vs Spark agree: no
+B3 spark fw15 r1: 37514.51s
+B4 spark fw15 r1: 24.94s
+B4 spark fw15 r2: 24.61s
+B4 spark fw15 r3: 24.19s
+cat: `/pipe/b4/fw15/funnel/part-*': No such file or directory
+cat: `/pipe/b4/fw15/top_domains/part-*': No such file or directory
+cat: `/pipe/b4/fw15/tokens_per_dump/part-*': No such file or directory

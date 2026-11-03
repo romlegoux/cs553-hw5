@@ -1,0 +1,5 @@
+step,stage,docs,tokens
+1,after B0,14868862,10371489838
+2,after quality filter,14741952,10361332961
+3,after exact dedup,14690848,10325791425
+4,after near-dup (B3),14668344,10306770879

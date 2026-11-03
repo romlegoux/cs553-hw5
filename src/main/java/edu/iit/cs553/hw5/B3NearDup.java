@@ -1,9 +1,11 @@
 package edu.iit.cs553.hw5;
+
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -13,6 +15,8 @@ import org.apache.spark.sql.RowFactory;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.types.DataTypes;
 import org.apache.spark.sql.types.StructType;
+import org.apache.spark.storage.StorageLevel;
+
 import scala.Tuple2;
 
 public class B3NearDup {
@@ -47,7 +51,7 @@ public class B3NearDup {
             if (!s.isEmpty()) w.add(s.toLowerCase());
         long[] sig = new long[K];
         Arrays.fill(sig, Long.MAX_VALUE);
-        for (int j = 0; j + 5 <= w.size(); j++) { // >= 50 words after B2, so never empty
+        for (int j = 0; j + 5 <= w.size(); j++) {
             String sh = String.join(" ", w.subList(j, j + 5));
             long x = Long.remainderUnsigned(ByteBuffer.wrap(DigestUtils.sha1(sh)).getLong(), P);
             for (int i = 0; i < K; i++) sig[i] = Math.min(sig[i], h(i, x));
@@ -55,9 +59,25 @@ public class B3NearDup {
         return sig;
     }
 
+    // band b (8 values) -> 64-bit bucket id
+    static long bucket(long[] sig, int b) {
+        long x = b + 1;
+        for (int i = b * ROWS; i < (b + 1) * ROWS; i++) x = (x ^ sig[i]) * 0x9E3779B97F4A7C15L;
+        return x ^ (x >>> 32);
+    }
+
+    // estimated Jaccard >= 0.8
+    static boolean similar(long[] a, long[] b) {
+        int same = 0;
+        for (int i = 0; i < K; i++) if (a[i] == b[i]) same++;
+        return (double) same / K >= 0.8;
+    }
+
     public static void main(String[] args) {
         // args: input (B2 TSV), output (parquet), nb of partitions
-        SparkSession spark = SparkSession.builder().appName("B3NearDup").getOrCreate();
+        SparkSession spark = SparkSession.builder().appName("B3NearDup")
+                .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer") // smaller shuffle
+                .getOrCreate();
         JavaSparkContext sc = JavaSparkContext.fromSparkContext(spark.sparkContext());
         int parts = Integer.parseInt(args[2]);
 
@@ -65,31 +85,34 @@ public class B3NearDup {
         JavaPairRDD<String, String> docs = sc.textFile(args[0])
                 .mapToPair(l -> new Tuple2<>(l.split("\t", 2)[0], l));
 
-        // one (bucket, (id, sig)) per band
-        JavaPairRDD<String, Tuple2<String, long[]>> members = docs.flatMapToPair(d -> {
-            long[] sig = signature(d._2.split("\t", 5)[4]);
-            List<Tuple2<String, Tuple2<String, long[]>>> out = new ArrayList<>();
-            for (int b = 0; b < BANDS; b++) {
-                String bucket = b + ":" + Arrays.toString(Arrays.copyOfRange(sig, b * ROWS, (b + 1) * ROWS));
-                out.add(new Tuple2<>(bucket, new Tuple2<>(d._1, sig)));
-            }
+        // id -> signature, computed once
+        JavaPairRDD<String, long[]> sigs = docs
+                .mapValues(l -> signature(l.split("\t", 5)[4]))
+                .persist(StorageLevel.MEMORY_AND_DISK_SER());
+
+        // (bucket, id) for the 8 bands: no signature in this shuffle
+        JavaPairRDD<Long, String> members = sigs.flatMapToPair(s -> {
+            List<Tuple2<Long, String>> out = new ArrayList<>();
+            for (int b = 0; b < BANDS; b++) out.add(new Tuple2<>(bucket(s._2, b), s._1));
             return out.iterator();
         });
 
-        // in each bucket, compare every doc with the smallest id
-        JavaRDD<String> marked = members.groupByKey(parts).flatMap(g -> {
-            Tuple2<String, long[]> rep = null;
-            for (Tuple2<String, long[]> d : g._2)
-                if (rep == null || d._1.compareTo(rep._1) < 0) rep = d;
-            List<String> out = new ArrayList<>();
-            for (Tuple2<String, long[]> d : g._2) {
-                if (d._1.equals(rep._1)) continue;
-                int same = 0;
-                for (int i = 0; i < K; i++) if (d._2[i] == rep._2[i]) same++;
-                if ((double) same / K >= 0.8) out.add(d._1); // estimated Jaccard >= 0.8
-            }
-            return out.iterator();
-        }).distinct().cache();
+        // smallest id of each bucket
+        JavaPairRDD<Long, String> reps = members.reduceByKey((a, b) -> a.compareTo(b) <= 0 ? a : b, parts);
+
+        // candidate pairs (doc, rep), doc != rep
+        JavaPairRDD<String, String> pairs = members.join(reps, parts).values()
+                .filter(t -> !t._1.equals(t._2))
+                .mapToPair(t -> t)
+                .distinct();
+
+        // compare each pair with the signatures: (doc, rep) -> (rep, (doc, docSig)) -> + repSig
+        JavaRDD<String> marked = pairs.join(sigs)
+                .mapToPair(t -> new Tuple2<>(t._2._1, new Tuple2<>(t._1, t._2._2)))
+                .join(sigs)
+                .filter(t -> similar(t._2._1._2, t._2._2))
+                .map(t -> t._2._1._1)
+                .distinct().cache();
 
         // remove marked docs, write parquet with the 5 fields
         JavaRDD<Row> rows = docs.subtractByKey(marked.mapToPair(id -> new Tuple2<>(id, true)))
@@ -110,3 +133,4 @@ public class B3NearDup {
         spark.stop();
     }
 }
+

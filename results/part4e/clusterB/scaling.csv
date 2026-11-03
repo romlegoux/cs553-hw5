@@ -1,0 +1,5 @@
+mode,framework,workers,rep,seconds
+strong,mapreduce,4,1,531.95
+strong,mapreduce,4,2,521.09
+strong,mapreduce,4,3,511.67
+strong,spark,4,1,4111.40

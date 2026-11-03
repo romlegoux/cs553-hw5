@@ -1,5 +1,6 @@
 #!/bin/bash
-# DATASETS="fw1" ./run-pipeline.sh  to test on FW-1 only
+# run-pipeline.sh: run on the node, inside tmux
+# DATASETS="fw1" STAGES="B2spark B3 B4" ./run-pipeline.sh  to run only some datasets/stages
 set -uo pipefail
 VMS=$(lxc list --format csv -c n)
 RES=~/hw5/results/part3/clusterB; mkdir -p $RES
@@ -9,6 +10,9 @@ JAR=/home/ubuntu/hw5-1.0.jar
 P=edu.iit.cs553.hw5
 B3=B3NearDup   # B3 class name
 R=55           # reducers / partitions, same as part 2
+STAGES=${STAGES:-B0 B1mr B1spark B2mr B2spark B3 B4}
+
+want() { [[ " $STAGES " == *" $1 "* ]]; }
 
 on_tiny() { lxc exec tiny -- sudo -H -u ubuntu bash -lc "$1"; }
 
@@ -57,23 +61,27 @@ for ds in ${DATASETS:-fw1 fw8 fw15}; do
   esac
   T=/fineweb/tsv/$ds
 
-  run_stage B0 spark     $ds $T "spark-submit --class $P.B0Ingest $JAR '$in' $T"
+  want B0      && run_stage B0 spark     $ds $T "spark-submit --class $P.B0Ingest $JAR '$in' $T"
 
-  run_stage B1 mapreduce $ds /pipe/b1mr/$ds    "hadoop jar $JAR $P.B1WordCountMR $T /pipe/b1mr/$ds $R"
-  run_stage B1 spark     $ds /pipe/b1spark/$ds "spark-submit --class $P.B1WordCountSpark $JAR $T /pipe/b1spark/$ds $R"
-  agree B1 $ds "LC_ALL=C sort" /pipe/b1mr/$ds /pipe/b1spark/$ds
+  want B1mr    && run_stage B1 mapreduce $ds /pipe/b1mr/$ds    "hadoop jar $JAR $P.B1WordCountMR $T /pipe/b1mr/$ds $R"
+  want B1spark && run_stage B1 spark     $ds /pipe/b1spark/$ds "spark-submit --class $P.B1WordCountSpark $JAR $T /pipe/b1spark/$ds $R"
+  want B1spark && agree B1 $ds "LC_ALL=C sort" /pipe/b1mr/$ds /pipe/b1spark/$ds
 
-  run_stage B2 mapreduce $ds /pipe/b2mr/$ds    "hadoop jar $JAR $P.B2FilterDedupMR $T /pipe/b2mr/$ds $R"
-  run_stage B2 spark     $ds /pipe/b2spark/$ds "spark-submit --class $P.B2FilterDedupSpark $JAR $T /pipe/b2spark/$ds $R"
+  want B2mr    && run_stage B2 mapreduce $ds /pipe/b2mr/$ds    "hadoop jar $JAR $P.B2FilterDedupMR $T /pipe/b2mr/$ds $R"
+  want B2spark && run_stage B2 spark     $ds /pipe/b2spark/$ds "spark-submit --class $P.B2FilterDedupSpark $JAR $T /pipe/b2spark/$ds $R"
   # output lines are input lines unchanged -> same set of ids = same output
-  agree B2 $ds "cut -f1 | LC_ALL=C sort" /pipe/b2mr/$ds /pipe/b2spark/$ds
+  want B2spark && agree B2 $ds "cut -f1 | LC_ALL=C sort" /pipe/b2mr/$ds /pipe/b2spark/$ds
+  # B3 reads the MR output, Spark output no longer needed once compared
+  want B2spark && on_tiny "hdfs dfs -rm -r -f -skipTrash /pipe/b2spark/$ds" > /dev/null 2>&1
 
-  run_stage B3 spark     $ds /pipe/b3/$ds "spark-submit --class $P.$B3 $JAR /pipe/b2mr/$ds /pipe/b3/$ds $R"
-  run_stage B4 spark     $ds /pipe/b4/$ds "spark-submit --class $P.B4Report $JAR $T /pipe/b2mr/$ds /pipe/b3/$ds /pipe/b4/$ds"
+  want B3      && run_stage B3 spark     $ds /pipe/b3/$ds "spark-submit --class $P.$B3 $JAR /pipe/b2mr/$ds /pipe/b3/$ds $R"
+  want B4      && run_stage B4 spark     $ds /pipe/b4/$ds "spark-submit --class $P.B4Report $JAR $T /pipe/b2mr/$ds /pipe/b3/$ds /pipe/b4/$ds"
 
   # data for 4d
-  on_tiny "hdfs dfs -cat /pipe/b1mr/$ds/part-* | LC_ALL=C sort -t\$'\t' -k2,2nr | head -25" > $RES/top25_words_$ds.tsv
-  for f in funnel top_domains tokens_per_dump; do
-    on_tiny "hdfs dfs -cat /pipe/b4/$ds/$f/part-*" > $RES/${f}_$ds.csv
-  done
+  if want B4; then
+    on_tiny "hdfs dfs -cat /pipe/b1mr/$ds/part-* | LC_ALL=C sort -t\$'\t' -k2,2nr | head -25" > $RES/top25_words_$ds.tsv
+    for f in funnel top_domains tokens_per_dump; do
+      on_tiny "hdfs dfs -cat /pipe/b4/$ds/$f/part-*" > $RES/${f}_$ds.csv
+    done
+  fi
 done

@@ -1,0 +1,5 @@
+== 8 NodeManagers running ==
+== 4 NodeManagers running ==
+strong mapreduce N=4 r1: 531.95s
+strong mapreduce N=4 r2: 521.09s
+strong mapreduce N=4 r3: 511.67s
