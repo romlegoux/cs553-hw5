@@ -1,0 +1,460 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/03 02:21:41 INFO SparkContext: Running Spark version 4.2.0
+26/11/03 02:21:41 INFO SparkContext: OS info Linux, 6.8.0-147-generic, amd64
+26/11/03 02:21:41 INFO SparkContext: Java version 17.0.20.1+1-1-24.04-Ubuntu
+26/11/03 02:21:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/03 02:21:41 INFO ResourceUtils: ==============================================================
+26/11/03 02:21:41 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/11/03 02:21:41 INFO ResourceUtils: ==============================================================
+26/11/03 02:21:41 INFO SparkContext: Submitted application: B2FilterDedupSpark
+26/11/03 02:21:41 INFO SecurityManager: Changing view acls to: ubuntu
+26/11/03 02:21:41 INFO SecurityManager: Changing modify acls to: ubuntu
+26/11/03 02:21:41 INFO SecurityManager: Changing view acls groups to: ubuntu
+26/11/03 02:21:41 INFO SecurityManager: Changing modify acls groups to: ubuntu
+26/11/03 02:21:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ubuntu groups with view permissions: EMPTY; users with modify permissions: ubuntu; groups with modify permissions: EMPTY; RPC SSL disabled
+26/11/03 02:21:41 INFO Utils: Successfully started service 'sparkDriver' on port 42969.
+26/11/03 02:21:41 INFO SparkEnv: Registering MapOutputTracker
+26/11/03 02:21:41 INFO SparkEnv: Registering BlockManagerMaster
+26/11/03 02:21:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/11/03 02:21:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/11/03 02:21:41 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/11/03 02:21:42 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-1c5dc1c5-c062-4ddc-b816-924049985ef8
+26/11/03 02:21:42 INFO SparkEnv: Registering OutputCommitCoordinator
+26/11/03 02:21:42 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/11/03 02:21:42 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/11/03 02:21:42 INFO SparkContext: Added JAR file:/home/ubuntu/hw5-1.0.jar at spark://tiny:42969/jars/hw5-1.0.jar with timestamp 1793672501142
+26/11/03 02:21:42 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 4, script: , vendor: , memory -> name: memory, amount: 5120, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/11/03 02:21:42 INFO ResourceProfile: Limiting resource is cpus at 4 tasks per executor
+26/11/03 02:21:42 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/11/03 02:21:42 INFO SecurityManager: Changing view acls to: ubuntu
+26/11/03 02:21:42 INFO SecurityManager: Changing modify acls to: ubuntu
+26/11/03 02:21:42 INFO SecurityManager: Changing view acls groups to: ubuntu
+26/11/03 02:21:42 INFO SecurityManager: Changing modify acls groups to: ubuntu
+26/11/03 02:21:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ubuntu groups with view permissions: EMPTY; users with modify permissions: ubuntu; groups with modify permissions: EMPTY; RPC SSL disabled
+26/11/03 02:21:42 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at tiny/10.163.246.10:8032
+26/11/03 02:21:44 INFO Configuration: resource-types.xml not found
+26/11/03 02:21:44 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+26/11/03 02:21:44 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (12288 MB per container)
+26/11/03 02:21:44 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+26/11/03 02:21:44 INFO Client: Setting up container launch context for our AM
+26/11/03 02:21:44 INFO Client: Setting up the launch environment for our AM container
+26/11/03 02:21:44 INFO Client: Preparing resources for our AM container
+26/11/03 02:21:44 INFO Client: Source and destination file systems are the same. Not copying hdfs://tiny:9000/spark-jars/spark-libs.jar
+26/11/03 02:21:44 INFO Client: Uploading resource file:/tmp/spark-5700b657-82c7-477d-94c2-9aca0110b802/__spark_conf__2842560868387029705.zip -> hdfs://tiny:9000/user/ubuntu/.sparkStaging/application_1793378561250_0116/__spark_conf__.zip
+26/11/03 02:21:44 INFO SecurityManager: Changing view acls to: ubuntu
+26/11/03 02:21:44 INFO SecurityManager: Changing modify acls to: ubuntu
+26/11/03 02:21:44 INFO SecurityManager: Changing view acls groups to: ubuntu
+26/11/03 02:21:44 INFO SecurityManager: Changing modify acls groups to: ubuntu
+26/11/03 02:21:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ubuntu groups with view permissions: EMPTY; users with modify permissions: ubuntu; groups with modify permissions: EMPTY; RPC SSL disabled
+26/11/03 02:21:44 INFO Client: Submitting application application_1793378561250_0116 to ResourceManager
+26/11/03 02:21:44 INFO YarnClientImpl: Submitted application application_1793378561250_0116
+26/11/03 02:21:45 INFO Client: Application report for application_1793378561250_0116 (state: ACCEPTED)
+26/11/03 02:21:45 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793672504841
+	 final status: UNDEFINED
+	 tracking URL: http://tiny:8088/proxy/application_1793378561250_0116/
+	 user: ubuntu
+26/11/03 02:21:49 INFO Client: Application report for application_1793378561250_0116 (state: RUNNING)
+26/11/03 02:21:49 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.163.246.12
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793672504841
+	 final status: UNDEFINED
+	 tracking URL: http://tiny:8088/proxy/application_1793378561250_0116/
+	 user: ubuntu
+26/11/03 02:21:49 INFO YarnClientSchedulerBackend: Application application_1793378561250_0116 has started running.
+26/11/03 02:21:49 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39737.
+26/11/03 02:21:49 INFO NettyBlockTransferService: Server created on tiny:39737
+26/11/03 02:21:49 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/11/03 02:21:49 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, tiny, 39737, None)
+26/11/03 02:21:49 INFO BlockManagerMasterEndpoint: Registering block manager tiny:39737 with 434.4 MiB RAM, BlockManagerId(driver, tiny, 39737, None)
+26/11/03 02:21:49 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, tiny, 39737, None)
+26/11/03 02:21:49 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, tiny, 39737, None)
+26/11/03 02:21:50 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.spark.deploy.yarn.AmIpFilter, Map(PROXY_HOSTS -> tiny, PROXY_URI_BASES -> http://tiny:8088/proxy/application_1793378561250_0116), /proxy/application_1793378561250_0116
+26/11/03 02:21:50 INFO RollingEventLogFilesWriter: Logging events to hdfs://tiny:9000/spark-logs/eventlog_v2_application_1793378561250_0116/events_1_application_1793378561250_0116.zstd
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /jobs: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /jobs/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /jobs/job: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /jobs/job/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/stage: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/stage/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/pool: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/pool/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/taskThreadDump: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/taskThreadDump/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /storage: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /storage/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /storage/rdd: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /storage/rdd/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /environment: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /environment/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /executors: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /executors/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /executors/threadDump: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /executors/threadDump/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /executors/heapHistogram: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /executors/heapHistogram/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /static: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /api: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /metrics: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /jobs/job/kill: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /stages/stage/kill: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:50 INFO ServerInfo: Adding filter to /metrics/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/11/03 02:21:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.12:41302) with ID 9, ResourceProfileId 0
+26/11/03 02:21:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.12:41300) with ID 1, ResourceProfileId 0
+26/11/03 02:21:54 INFO BlockManagerMasterEndpoint: Registering block manager small2:35829 with 2.8 GiB RAM, BlockManagerId(9, small2, 35829, None)
+26/11/03 02:21:54 INFO BlockManagerMasterEndpoint: Registering block manager small2:42569 with 2.8 GiB RAM, BlockManagerId(1, small2, 42569, None)
+26/11/03 02:21:55 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.13:58402) with ID 11, ResourceProfileId 0
+26/11/03 02:21:55 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.13:58416) with ID 6, ResourceProfileId 0
+26/11/03 02:21:55 INFO BlockManagerMasterEndpoint: Registering block manager small3:35739 with 2.8 GiB RAM, BlockManagerId(6, small3, 35739, None)
+26/11/03 02:21:55 INFO BlockManagerMasterEndpoint: Registering block manager small3:39189 with 2.8 GiB RAM, BlockManagerId(11, small3, 39189, None)
+26/11/03 02:21:55 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.16:38882) with ID 16, ResourceProfileId 0
+26/11/03 02:21:55 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.16:38874) with ID 4, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.15:43976) with ID 3, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.15:43970) with ID 15, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.14:57448) with ID 14, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.14:57458) with ID 2, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.17:58874) with ID 8, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.17:58860) with ID 13, ResourceProfileId 0
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small6:39611 with 2.8 GiB RAM, BlockManagerId(4, small6, 39611, None)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small6:38517 with 2.8 GiB RAM, BlockManagerId(16, small6, 38517, None)
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.11:40090) with ID 5, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.11:40102) with ID 10, ResourceProfileId 0
+26/11/03 02:21:56 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small5:45409 with 2.8 GiB RAM, BlockManagerId(15, small5, 45409, None)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small5:39059 with 2.8 GiB RAM, BlockManagerId(3, small5, 39059, None)
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.18:37654) with ID 7, ResourceProfileId 0
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small4:43703 with 2.8 GiB RAM, BlockManagerId(14, small4, 43703, None)
+26/11/03 02:21:56 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.163.246.18:37640) with ID 12, ResourceProfileId 0
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small4:42687 with 2.8 GiB RAM, BlockManagerId(2, small4, 42687, None)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small7:33115 with 2.8 GiB RAM, BlockManagerId(8, small7, 33115, None)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small7:40133 with 2.8 GiB RAM, BlockManagerId(13, small7, 40133, None)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small1:39659 with 2.8 GiB RAM, BlockManagerId(5, small1, 39659, None)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small1:36265 with 2.8 GiB RAM, BlockManagerId(10, small1, 36265, None)
+26/11/03 02:21:56 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/11/03 02:21:56 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 248.5 KiB, free 434.2 MiB)
+26/11/03 02:21:56 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 38.5 KiB, free 434.1 MiB)
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small8:34685 with 2.8 GiB RAM, BlockManagerId(12, small8, 34685, None)
+26/11/03 02:21:56 INFO SparkContext: Created broadcast 0 from textFile at B2FilterDedupSpark.java:31
+26/11/03 02:21:56 INFO BlockManagerMasterEndpoint: Registering block manager small8:39127 with 2.8 GiB RAM, BlockManagerId(7, small8, 39127, None)
+26/11/03 02:21:56 INFO deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+26/11/03 02:21:56 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+26/11/03 02:21:56 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+26/11/03 02:21:56 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+26/11/03 02:21:56 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:85
+26/11/03 02:21:56 INFO FileInputFormat: Total input files to process : 64
+26/11/03 02:21:56 INFO DAGScheduler: Registering RDD 3 (mapToPair at B2FilterDedupSpark.java:37) as input to shuffle 0
+26/11/03 02:21:56 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:85) with 55 output partitions
+26/11/03 02:21:56 INFO DAGScheduler: Final stage: ResultStage 1 (runJob at SparkHadoopWriter.scala:85)
+26/11/03 02:21:56 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+26/11/03 02:21:56 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+26/11/03 02:21:56 INFO DAGScheduler: Missing parents found for ResultStage 1: List(ShuffleMapStage 0)
+26/11/03 02:21:56 INFO DAGScheduler: Missing parents found for ShuffleMapStage 0: List()
+26/11/03 02:21:56 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at B2FilterDedupSpark.java:37), which has no missing parents
+26/11/03 02:21:56 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.3 KiB, free 434.1 MiB)
+26/11/03 02:21:56 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.4 KiB, free 434.1 MiB)
+26/11/03 02:21:56 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1760
+26/11/03 02:21:56 INFO DAGScheduler: Submitting 64 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at B2FilterDedupSpark.java:37) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+26/11/03 02:21:56 INFO YarnScheduler: Adding task set 0.0 with 64 tasks resource profile 0
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 0) (small2,executor 1, partition 8, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 1) (small8,executor 12, partition 0, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 2) (small4,executor 2, partition 24, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 3) (small7,executor 8, partition 12, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (small1,executor 10, partition 4, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 5) (small5,executor 15, partition 20, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 6) (small5,executor 3, partition 21, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 7) (small8,executor 7, partition 1, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 8) (small2,executor 9, partition 9, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 32.0 in stage 0.0 (TID 9) (small6,executor 16, partition 32, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 10) (small1,executor 5, partition 5, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 48.0 in stage 0.0 (TID 11) (small3,executor 6, partition 48, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 25.0 in stage 0.0 (TID 12) (small4,executor 14, partition 25, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 33.0 in stage 0.0 (TID 13) (small6,executor 4, partition 33, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 14) (small7,executor 13, partition 13, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 49.0 in stage 0.0 (TID 15) (small3,executor 11, partition 49, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 16) (small2,executor 1, partition 10, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 17) (small8,executor 12, partition 2, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 26.0 in stage 0.0 (TID 18) (small4,executor 2, partition 26, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 19) (small7,executor 8, partition 14, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 20) (small1,executor 10, partition 6, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 21) (small5,executor 15, partition 22, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 22) (small5,executor 3, partition 23, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 23) (small8,executor 7, partition 3, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 24) (small2,executor 9, partition 11, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 34.0 in stage 0.0 (TID 25) (small6,executor 16, partition 34, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 26) (small1,executor 5, partition 7, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 50.0 in stage 0.0 (TID 27) (small3,executor 6, partition 50, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 27.0 in stage 0.0 (TID 28) (small4,executor 14, partition 27, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 35.0 in stage 0.0 (TID 29) (small6,executor 4, partition 35, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 30) (small7,executor 13, partition 15, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 51.0 in stage 0.0 (TID 31) (small3,executor 11, partition 51, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 40.0 in stage 0.0 (TID 32) (small2,executor 1, partition 40, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 36.0 in stage 0.0 (TID 33) (small8,executor 12, partition 36, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 41.0 in stage 0.0 (TID 34) (small4,executor 2, partition 41, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 28.0 in stage 0.0 (TID 35) (small7,executor 8, partition 28, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 36) (small1,executor 10, partition 16, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 44.0 in stage 0.0 (TID 37) (small5,executor 15, partition 44, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 45.0 in stage 0.0 (TID 38) (small5,executor 3, partition 45, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 37.0 in stage 0.0 (TID 39) (small8,executor 7, partition 37, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 42.0 in stage 0.0 (TID 40) (small2,executor 9, partition 42, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 60.0 in stage 0.0 (TID 41) (small6,executor 16, partition 60, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 42) (small1,executor 5, partition 17, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 56.0 in stage 0.0 (TID 43) (small3,executor 6, partition 56, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 43.0 in stage 0.0 (TID 44) (small4,executor 14, partition 43, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 61.0 in stage 0.0 (TID 45) (small6,executor 4, partition 61, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 29.0 in stage 0.0 (TID 46) (small7,executor 13, partition 29, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 57.0 in stage 0.0 (TID 47) (small3,executor 11, partition 57, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 52.0 in stage 0.0 (TID 48) (small2,executor 1, partition 52, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 38.0 in stage 0.0 (TID 49) (small8,executor 12, partition 38, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 53.0 in stage 0.0 (TID 50) (small4,executor 2, partition 53, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 30.0 in stage 0.0 (TID 51) (small7,executor 8, partition 30, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 52) (small1,executor 10, partition 18, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 46.0 in stage 0.0 (TID 53) (small5,executor 15, partition 46, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 47.0 in stage 0.0 (TID 54) (small5,executor 3, partition 47, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 39.0 in stage 0.0 (TID 55) (small8,executor 7, partition 39, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 54.0 in stage 0.0 (TID 56) (small2,executor 9, partition 54, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 62.0 in stage 0.0 (TID 57) (small6,executor 16, partition 62, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 58) (small1,executor 5, partition 19, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 58.0 in stage 0.0 (TID 59) (small3,executor 6, partition 58, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 55.0 in stage 0.0 (TID 60) (small4,executor 14, partition 55, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 63.0 in stage 0.0 (TID 61) (small6,executor 4, partition 63, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 31.0 in stage 0.0 (TID 62) (small7,executor 13, partition 31, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:21:57 INFO TaskSetManager: Starting task 59.0 in stage 0.0 (TID 63) (small3,executor 11, partition 59, NODE_LOCAL, 9898 bytes) 
+26/11/03 02:22:06 INFO TaskSetManager: Finished task 31.0 in stage 0.0 (TID 62) in 9583 ms on small7 (executor 13) (1/64)
+26/11/03 02:22:06 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 0) in 9837 ms on small2 (executor 1) (2/64)
+26/11/03 02:22:06 INFO TaskSetManager: Finished task 52.0 in stage 0.0 (TID 48) in 9783 ms on small2 (executor 1) (3/64)
+26/11/03 02:22:06 INFO TaskSetManager: Finished task 42.0 in stage 0.0 (TID 40) in 9817 ms on small2 (executor 9) (4/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 45.0 in stage 0.0 (TID 38) in 10131 ms on small5 (executor 3) (5/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 14) in 10172 ms on small7 (executor 13) (6/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 29.0 in stage 0.0 (TID 46) in 10176 ms on small7 (executor 13) (7/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 40.0 in stage 0.0 (TID 32) in 10295 ms on small2 (executor 1) (8/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 16) in 10343 ms on small2 (executor 1) (9/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 8) in 10399 ms on small2 (executor 9) (10/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 39.0 in stage 0.0 (TID 55) in 10370 ms on small8 (executor 7) (11/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 37.0 in stage 0.0 (TID 39) in 10383 ms on small8 (executor 7) (12/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 47.0 in stage 0.0 (TID 54) in 10373 ms on small5 (executor 3) (13/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 33.0 in stage 0.0 (TID 13) in 10422 ms on small6 (executor 4) (14/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 19) in 10425 ms on small7 (executor 8) (15/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 3) in 10589 ms on small7 (executor 8) (16/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 57.0 in stage 0.0 (TID 47) in 10653 ms on small3 (executor 11) (17/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 35.0 in stage 0.0 (TID 29) in 10675 ms on small6 (executor 4) (18/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 63.0 in stage 0.0 (TID 61) in 10656 ms on small6 (executor 4) (19/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 54.0 in stage 0.0 (TID 56) in 10684 ms on small2 (executor 9) (20/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 24) in 10780 ms on small2 (executor 9) (21/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 26.0 in stage 0.0 (TID 18) in 10785 ms on small4 (executor 2) (22/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 53.0 in stage 0.0 (TID 50) in 10780 ms on small4 (executor 2) (23/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 22) in 10828 ms on small5 (executor 3) (24/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 41.0 in stage 0.0 (TID 34) in 10828 ms on small4 (executor 2) (25/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 49.0 in stage 0.0 (TID 15) in 10879 ms on small3 (executor 11) (26/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 27.0 in stage 0.0 (TID 28) in 10896 ms on small4 (executor 14) (27/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 28.0 in stage 0.0 (TID 35) in 10902 ms on small7 (executor 8) (28/64)
+26/11/03 02:22:07 INFO TaskSetManager: Finished task 61.0 in stage 0.0 (TID 45) in 10932 ms on small6 (executor 4) (29/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 30) in 11005 ms on small7 (executor 13) (30/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 44.0 in stage 0.0 (TID 37) in 11002 ms on small5 (executor 15) (31/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 5) in 11079 ms on small5 (executor 15) (32/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 51.0 in stage 0.0 (TID 31) in 11062 ms on small3 (executor 11) (33/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 46.0 in stage 0.0 (TID 53) in 11049 ms on small5 (executor 15) (34/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 58.0 in stage 0.0 (TID 59) in 11137 ms on small3 (executor 6) (35/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 50.0 in stage 0.0 (TID 27) in 11190 ms on small3 (executor 6) (36/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 36.0 in stage 0.0 (TID 33) in 11217 ms on small8 (executor 12) (37/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 42) in 11372 ms on small1 (executor 5) (38/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 10) in 11397 ms on small1 (executor 5) (39/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 26) in 11386 ms on small1 (executor 5) (40/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 7) in 11430 ms on small8 (executor 7) (41/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 1) in 11481 ms on small8 (executor 12) (42/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 60.0 in stage 0.0 (TID 41) in 11499 ms on small6 (executor 16) (43/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 38.0 in stage 0.0 (TID 49) in 11542 ms on small8 (executor 12) (44/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 30.0 in stage 0.0 (TID 51) in 11545 ms on small7 (executor 8) (45/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 20) in 11609 ms on small1 (executor 10) (46/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 52) in 11588 ms on small1 (executor 10) (47/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 6) in 11642 ms on small5 (executor 3) (48/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 24.0 in stage 0.0 (TID 2) in 11661 ms on small4 (executor 2) (49/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 23) in 11686 ms on small8 (executor 7) (50/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 32.0 in stage 0.0 (TID 9) in 11698 ms on small6 (executor 16) (51/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 59.0 in stage 0.0 (TID 63) in 11758 ms on small3 (executor 11) (52/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 34.0 in stage 0.0 (TID 25) in 11807 ms on small6 (executor 16) (53/64)
+26/11/03 02:22:08 INFO TaskSetManager: Finished task 55.0 in stage 0.0 (TID 60) in 11886 ms on small4 (executor 14) (54/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 25.0 in stage 0.0 (TID 12) in 12013 ms on small4 (executor 14) (55/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 21) in 12047 ms on small5 (executor 15) (56/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 48.0 in stage 0.0 (TID 11) in 12155 ms on small3 (executor 6) (57/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 43.0 in stage 0.0 (TID 44) in 12200 ms on small4 (executor 14) (58/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 62.0 in stage 0.0 (TID 57) in 12316 ms on small6 (executor 16) (59/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 56.0 in stage 0.0 (TID 43) in 12357 ms on small3 (executor 6) (60/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 12398 ms on small1 (executor 10) (61/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 17) in 12434 ms on small8 (executor 12) (62/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 58) in 12479 ms on small1 (executor 5) (63/64)
+26/11/03 02:22:09 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 36) in 12939 ms on small1 (executor 10) (64/64)
+26/11/03 02:22:10 INFO YarnScheduler: Removed TaskSet 0.0 whose tasks have all completed, from pool 
+26/11/03 02:22:10 INFO DAGScheduler: ShuffleMapStage 0 (mapToPair at B2FilterDedupSpark.java:37) finished in 13078 ms
+26/11/03 02:22:10 INFO DAGScheduler: looking for newly runnable stages
+26/11/03 02:22:10 INFO DAGScheduler: running: HashSet()
+26/11/03 02:22:10 INFO DAGScheduler: waiting: HashSet(ResultStage 1)
+26/11/03 02:22:10 INFO DAGScheduler: failed: HashSet()
+26/11/03 02:22:10 INFO DAGScheduler: Missing parents found for ResultStage 1: List()
+26/11/03 02:22:10 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[6] at saveAsTextFile at B2FilterDedupSpark.java:44), which has no missing parents
+26/11/03 02:22:10 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 118.8 KiB, free 434.0 MiB)
+26/11/03 02:22:10 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 43.7 KiB, free 433.9 MiB)
+26/11/03 02:22:10 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1760
+26/11/03 02:22:10 INFO DAGScheduler: Submitting 55 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at saveAsTextFile at B2FilterDedupSpark.java:44) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+26/11/03 02:22:10 INFO YarnScheduler: Adding task set 1.0 with 55 tasks resource profile 0
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 64) (small3,executor 11, partition 0, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 65) (small4,executor 2, partition 1, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 66) (small7,executor 13, partition 2, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 67) (small5,executor 15, partition 3, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 68) (small1,executor 5, partition 4, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 69) (small6,executor 4, partition 5, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 70) (small3,executor 6, partition 6, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 71) (small8,executor 12, partition 7, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 72) (small5,executor 3, partition 8, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 73) (small6,executor 16, partition 9, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 74) (small8,executor 7, partition 10, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 75) (small4,executor 14, partition 11, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 76) (small7,executor 8, partition 12, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 77) (small1,executor 10, partition 13, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 78) (small2,executor 9, partition 14, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 79) (small2,executor 1, partition 15, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 80) (small3,executor 11, partition 16, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 81) (small4,executor 2, partition 17, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 82) (small7,executor 13, partition 18, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 83) (small5,executor 15, partition 19, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 20.0 in stage 1.0 (TID 84) (small1,executor 5, partition 20, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 21.0 in stage 1.0 (TID 85) (small6,executor 4, partition 21, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 22.0 in stage 1.0 (TID 86) (small3,executor 6, partition 22, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 23.0 in stage 1.0 (TID 87) (small8,executor 12, partition 23, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 24.0 in stage 1.0 (TID 88) (small5,executor 3, partition 24, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 25.0 in stage 1.0 (TID 89) (small6,executor 16, partition 25, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 26.0 in stage 1.0 (TID 90) (small8,executor 7, partition 26, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 27.0 in stage 1.0 (TID 91) (small4,executor 14, partition 27, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 28.0 in stage 1.0 (TID 92) (small7,executor 8, partition 28, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 29.0 in stage 1.0 (TID 93) (small1,executor 10, partition 29, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 30.0 in stage 1.0 (TID 94) (small2,executor 9, partition 30, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 31.0 in stage 1.0 (TID 95) (small2,executor 1, partition 31, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 32.0 in stage 1.0 (TID 96) (small3,executor 11, partition 32, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 33.0 in stage 1.0 (TID 97) (small4,executor 2, partition 33, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 34.0 in stage 1.0 (TID 98) (small7,executor 13, partition 34, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 35.0 in stage 1.0 (TID 99) (small5,executor 15, partition 35, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 36.0 in stage 1.0 (TID 100) (small1,executor 5, partition 36, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 37.0 in stage 1.0 (TID 101) (small6,executor 4, partition 37, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 38.0 in stage 1.0 (TID 102) (small3,executor 6, partition 38, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 39.0 in stage 1.0 (TID 103) (small8,executor 12, partition 39, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 40.0 in stage 1.0 (TID 104) (small5,executor 3, partition 40, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 41.0 in stage 1.0 (TID 105) (small6,executor 16, partition 41, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 42.0 in stage 1.0 (TID 106) (small8,executor 7, partition 42, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 43.0 in stage 1.0 (TID 107) (small4,executor 14, partition 43, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 44.0 in stage 1.0 (TID 108) (small7,executor 8, partition 44, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 45.0 in stage 1.0 (TID 109) (small1,executor 10, partition 45, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 46.0 in stage 1.0 (TID 110) (small2,executor 9, partition 46, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 47.0 in stage 1.0 (TID 111) (small2,executor 1, partition 47, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 48.0 in stage 1.0 (TID 112) (small3,executor 11, partition 48, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 49.0 in stage 1.0 (TID 113) (small4,executor 2, partition 49, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 50.0 in stage 1.0 (TID 114) (small7,executor 13, partition 50, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 51.0 in stage 1.0 (TID 115) (small5,executor 15, partition 51, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 52.0 in stage 1.0 (TID 116) (small1,executor 5, partition 52, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 53.0 in stage 1.0 (TID 117) (small6,executor 4, partition 53, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO TaskSetManager: Starting task 54.0 in stage 1.0 (TID 118) (small3,executor 6, partition 54, PROCESS_LOCAL, 9622 bytes) 
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.15:43976
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.14:57448
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.12:41302
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.13:58402
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.18:37640
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.18:37654
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.17:58874
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.16:38874
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.11:40090
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.17:58860
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.11:40102
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.13:58416
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.15:43970
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.12:41300
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.14:57458
+26/11/03 02:22:10 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.163.246.16:38882
+26/11/03 02:22:12 INFO TaskSetManager: Finished task 46.0 in stage 1.0 (TID 110) in 2231 ms on small2 (executor 9) (1/55)
+26/11/03 02:22:12 INFO TaskSetManager: Finished task 30.0 in stage 1.0 (TID 94) in 2238 ms on small2 (executor 9) (2/55)
+26/11/03 02:22:12 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 78) in 2333 ms on small2 (executor 9) (3/55)
+26/11/03 02:22:12 INFO TaskSetManager: Finished task 31.0 in stage 1.0 (TID 95) in 2373 ms on small2 (executor 1) (4/55)
+26/11/03 02:22:12 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 79) in 2382 ms on small2 (executor 1) (5/55)
+26/11/03 02:22:12 INFO TaskSetManager: Finished task 47.0 in stage 1.0 (TID 111) in 2370 ms on small2 (executor 1) (6/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 71) in 3034 ms on small8 (executor 12) (7/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 23.0 in stage 1.0 (TID 87) in 3078 ms on small8 (executor 12) (8/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 39.0 in stage 1.0 (TID 103) in 3074 ms on small8 (executor 12) (9/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 51.0 in stage 1.0 (TID 115) in 3079 ms on small5 (executor 15) (10/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 69) in 3102 ms on small6 (executor 4) (11/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 53.0 in stage 1.0 (TID 117) in 3080 ms on small6 (executor 4) (12/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 21.0 in stage 1.0 (TID 85) in 3093 ms on small6 (executor 4) (13/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 29.0 in stage 1.0 (TID 93) in 3090 ms on small1 (executor 10) (14/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 72) in 3106 ms on small5 (executor 3) (15/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 35.0 in stage 1.0 (TID 99) in 3092 ms on small5 (executor 15) (16/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 40.0 in stage 1.0 (TID 104) in 3096 ms on small5 (executor 3) (17/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 37.0 in stage 1.0 (TID 101) in 3100 ms on small6 (executor 4) (18/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 68) in 3118 ms on small1 (executor 5) (19/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 25.0 in stage 1.0 (TID 89) in 3106 ms on small6 (executor 16) (20/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 36.0 in stage 1.0 (TID 100) in 3103 ms on small1 (executor 5) (21/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 74) in 3117 ms on small8 (executor 7) (22/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 65) in 3121 ms on small4 (executor 2) (23/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 49.0 in stage 1.0 (TID 113) in 3098 ms on small4 (executor 2) (24/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 75) in 3117 ms on small4 (executor 14) (25/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 26.0 in stage 1.0 (TID 90) in 3109 ms on small8 (executor 7) (26/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 42.0 in stage 1.0 (TID 106) in 3103 ms on small8 (executor 7) (27/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 77) in 3117 ms on small1 (executor 10) (28/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 52.0 in stage 1.0 (TID 116) in 3237 ms on small1 (executor 5) (29/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 24.0 in stage 1.0 (TID 88) in 3251 ms on small5 (executor 3) (30/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 81) in 3255 ms on small4 (executor 2) (31/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 20.0 in stage 1.0 (TID 84) in 3255 ms on small1 (executor 5) (32/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 70) in 3264 ms on small3 (executor 6) (33/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 67) in 3266 ms on small5 (executor 15) (34/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 44.0 in stage 1.0 (TID 108) in 3250 ms on small7 (executor 8) (35/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 76) in 3266 ms on small7 (executor 8) (36/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 33.0 in stage 1.0 (TID 97) in 3298 ms on small4 (executor 2) (37/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 28.0 in stage 1.0 (TID 92) in 3328 ms on small7 (executor 8) (38/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 54.0 in stage 1.0 (TID 118) in 3320 ms on small3 (executor 6) (39/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 43.0 in stage 1.0 (TID 107) in 3326 ms on small4 (executor 14) (40/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 82) in 3339 ms on small7 (executor 13) (41/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 34.0 in stage 1.0 (TID 98) in 3540 ms on small7 (executor 13) (42/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 66) in 3559 ms on small7 (executor 13) (43/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 22.0 in stage 1.0 (TID 86) in 3549 ms on small3 (executor 6) (44/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 32.0 in stage 1.0 (TID 96) in 3560 ms on small3 (executor 11) (45/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 48.0 in stage 1.0 (TID 112) in 3554 ms on small3 (executor 11) (46/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 80) in 3569 ms on small3 (executor 11) (47/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 41.0 in stage 1.0 (TID 105) in 3756 ms on small6 (executor 16) (48/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 73) in 3773 ms on small6 (executor 16) (49/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 64) in 3777 ms on small3 (executor 11) (50/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 45.0 in stage 1.0 (TID 109) in 3756 ms on small1 (executor 10) (51/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 83) in 3917 ms on small5 (executor 15) (52/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 38.0 in stage 1.0 (TID 102) in 3911 ms on small3 (executor 6) (53/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 27.0 in stage 1.0 (TID 91) in 3918 ms on small4 (executor 14) (54/55)
+26/11/03 02:22:13 INFO TaskSetManager: Finished task 50.0 in stage 1.0 (TID 114) in 3910 ms on small7 (executor 13) (55/55)
+26/11/03 02:22:13 INFO YarnScheduler: Removed TaskSet 1.0 whose tasks have all completed, from pool 
+26/11/03 02:22:13 INFO DAGScheduler: ResultStage 1 (runJob at SparkHadoopWriter.scala:85) finished in 3964 ms
+26/11/03 02:22:14 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+26/11/03 02:22:14 INFO YarnScheduler: Canceling stage 1
+26/11/03 02:22:14 INFO YarnScheduler: Killing all running tasks in stage 1: Stage finished
+26/11/03 02:22:14 INFO DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:85, took 17311.47473 ms
+26/11/03 02:22:14 INFO SparkHadoopWriter: Start to commit write Job job_202611030221561008285176639416158_0006.
+26/11/03 02:22:14 INFO SparkHadoopWriter: Write Job job_202611030221561008285176639416158_0006 committed. Elapsed time: 565 ms.
+FILTERED_OUT=9178 DUPLICATES=157
+26/11/03 02:22:14 INFO SparkContext: SparkContext is stopping with exitCode 0 from stop at B2FilterDedupSpark.java:47.
+26/11/03 02:22:14 INFO SparkUI: Stopped Spark web UI at http://tiny:4040
+26/11/03 02:22:14 INFO YarnClientSchedulerBackend: Interrupting monitor thread
+26/11/03 02:22:14 INFO YarnClientSchedulerBackend: Shutting down all executors
+26/11/03 02:22:14 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+26/11/03 02:22:14 INFO YarnClientSchedulerBackend: YARN client scheduler backend Stopped
+26/11/03 02:22:14 INFO RollingEventLogFilesWriter: Stopping event writer for hdfs://tiny:9000/spark-logs/eventlog_v2_application_1793378561250_0116
+26/11/03 02:22:14 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+26/11/03 02:22:14 INFO MemoryStore: MemoryStore cleared
+26/11/03 02:22:14 INFO BlockManager: BlockManager stopped
+26/11/03 02:22:14 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/11/03 02:22:14 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/11/03 02:22:14 INFO SparkContext: Successfully stopped SparkContext (Uptime: 33618 ms)

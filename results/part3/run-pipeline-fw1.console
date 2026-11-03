@@ -1,0 +1,23 @@
+B0 spark fw1 r1: 37.18s
+B0 spark fw1 r2: 37.24s
+B0 spark fw1 r3: 37.09s
+B1 mapreduce fw1 r1: 67.72s
+B1 mapreduce fw1 r2: 70.01s
+B1 mapreduce fw1 r3: 69.60s
+B1 spark fw1 r1: 34.91s
+B1 spark fw1 r2: 35.21s
+B1 spark fw1 r3: 34.01s
+B1 fw1 MR vs Spark agree: yes
+B2 mapreduce fw1 r1: 55.07s
+B2 mapreduce fw1 r2: 58.35s
+B2 mapreduce fw1 r3: 54.69s
+B2 spark fw1 r1: 36.49s
+B2 spark fw1 r2: 36.86s
+B2 spark fw1 r3: 36.70s
+B2 fw1 MR vs Spark agree: yes
+B3 spark fw1 r1: 67.31s
+B3 spark fw1 r2: 80.35s
+B3 spark fw1 r3: 64.59s
+B4 spark fw1 r1: 53.84s
+B4 spark fw1 r2: 53.94s
+B4 spark fw1 r3: 53.02s
