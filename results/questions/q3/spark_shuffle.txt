@@ -1,0 +1,6 @@
+== application_1793378561250_0242
+1 runJob at SparkHadoopWriter.scala:85 shuffleWrite=0.0 MB shuffleRead=109.7 MB records=0
+0 mapToPair at B1WordCountSpark.java:34 shuffleWrite=109.7 MB shuffleRead=0.0 MB records=9697547
+== application_1793378561250_0109
+1 runJob at SparkHadoopWriter.scala:85 shuffleWrite=0.0 MB shuffleRead=109.7 MB records=0
+0 mapToPair at B1WordCountSpark.java:34 shuffleWrite=109.7 MB shuffleRead=0.0 MB records=9697547

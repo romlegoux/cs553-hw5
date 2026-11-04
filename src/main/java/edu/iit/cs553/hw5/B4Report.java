@@ -35,7 +35,10 @@ public class B4Report {
         SparkSession spark = SparkSession.builder().appName("B4Report").getOrCreate();
         String out = args[3];
 
-        Dataset<Row> b0 = tsv(spark, args[0]);
+        // Q8: the B0 input can be the raw Parquet instead of the TSV
+        Dataset<Row> b0 = args[0].contains(".parquet")
+                ? spark.read().parquet(args[0]).select("id", "dump", "url", "token_count", "text")
+                : tsv(spark, args[0]);
         Dataset<Row> b2 = tsv(spark, args[1]);
         Dataset<Row> b3 = spark.read().parquet(args[2]);
 

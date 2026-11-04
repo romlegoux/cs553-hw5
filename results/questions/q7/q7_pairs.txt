@@ -1,0 +1,76 @@
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 4.2.0
+      /_/
+         
+Using Scala version 2.13.18 (OpenJDK 64-Bit Server VM, Java 17.0.20.1)
+Type in expressions to have them evaluated.
+Type :help for more information.
+Spark context Web UI available at http://tiny:4040
+Spark context available as 'sc' (master = yarn, app id = application_1793378561250_0246).
+Spark session available as 'spark'.
+
+scala> val pairs: org.apache.spark.sql.DataFrame = [doc: string, rep: string]
+
+scala> val docs: org.apache.spark.sql.DataFrame = [id: string, url: string ... 1 more field]
+
+scala> val d: org.apache.spark.sql.DataFrame = [did: string, durl: string ... 1 more field]
+
+scala> val r: org.apache.spark.sql.DataFrame = [rid: string, rurl: string ... 1 more field]
+
+scala> val rows: Array[org.apache.spark.sql.Row] = Array([https://www.beauneimports.com/producer/domaine-sylvain-bailly/product/2020-sancerre-la-louee,https://www.beauneimports.com/producer/domaine-sylvain-bailly/product/2019-sancerre-la-louee,Domaine Sylvain Bailly, 2020 Sancerre, La Louée 100% Pinot Noir Vineyards: 15-40 year old vines planted 6500 vines per hectare in Bué and the surrounding villages of Crézancy, Amigny & Montigny. Produ,Domaine Sylvain Bailly, 2019 Sancerre, La Louée 100% Pinot Noir Vineyards: 15-40 year old vines planted 6500 vines per hectare in Bué and the surrounding villages of Crézancy, Amigny & Montigny. Produ], [http://www.wikihow.com/Drive-in-Icy-Conditions,http://www.wikihow.com/Drive-in-Icy-Conditions,Knowing how to drive in icy conditions is an extremely import...
+
+scala> DOC https://www.beauneimports.com/producer/domaine-sylvain-bailly/product/2020-sancerre-la-louee
+REP https://www.beauneimports.com/producer/domaine-sylvain-bailly/product/2019-sancerre-la-louee
+  doc: Domaine Sylvain Bailly, 2020 Sancerre, La Louée 100% Pinot Noir Vineyards: 15-40 year old vines planted 6500 vines per hectare in Bué and the surrounding villages of Crézancy, Amigny & Montigny. Produ
+  rep: Domaine Sylvain Bailly, 2019 Sancerre, La Louée 100% Pinot Noir Vineyards: 15-40 year old vines planted 6500 vines per hectare in Bué and the surrounding villages of Crézancy, Amigny & Montigny. Produ
+
+DOC http://www.wikihow.com/Drive-in-Icy-Conditions
+REP http://www.wikihow.com/Drive-in-Icy-Conditions
+  doc: Knowing how to drive in icy conditions is an extremely important skill, especially if you live in a colder climate with harsh winters. Icy conditions can occur suddenly and without warning, so you hav
+  rep: Knowing how to drive in icy conditions is an extremely important skill, especially if you live in a colder climate with harsh winters. Icy conditions can occur suddenly and without warning, so you hav
+
+DOC http://leetwentysix.blogspot.com/2011/07/after-my-exam.html
+REP http://leetwentysix.blogspot.com/2011/07/after-my-exam.html
+  doc: I went out with my cousin in-law? honestly, how do you call someone who is married to your husband's cousin? well anyway I like to refer to her as a good friend, her name is Juhanisa or Joh for short.
+  rep: After Exam Break I went out with my cousin in-law? honestly, how do you call someone who is married to your husband's cousin? well anyway I like to refer to her as a good friend, her name is Juhanisa 
+
+DOC http://scitation.aip.org/content/aip/journal/apl/86/14/10.1063/1.1897075
+REP http://scitation.aip.org/content/aip/journal/jap/59/2/10.1063/1.336645
+  doc: No data available. Please log in to see this content. You have no subscription access to this content. No metrics data to plot. The attempt to load metrics for this article has failed. The attempt to 
+  rep: No data available. Please log in to see this content. You have no subscription access to this content. No metrics data to plot. The attempt to load metrics for this article has failed. The attempt to 
+
+DOC http://streeteasy.com/talk/discussion/33802-low-bonuses-hurt-nyc-re
+REP http://streeteasy.com/talk/discussion/33802-low-bonuses-hurt-nyc-re
+  doc: New York City Northern New Jersey Open House Planner Shop for a Broker Condo Market Index "House Prices In New York City Are Not Going In The Right Direction, And It's Because Of Wall Street Bonuses" 
+  rep: New York City Northern New Jersey Upper East Side Real Estate Tribeca Real Estate Williamsburg Real Estate Brooklyn Heights Real Estate Park Slope Real Estate Ditmas Park Real Estate Astoria Real Esta
+
+DOC http://www.wlwt.com/news/local-news/cincinnati/Police-Speeding-causes-crashes-on-Fort-Washington-Way/18179766?view=print
+REP http://www.wlwt.com/article/police-speeding-causes-crashes-on-fort-washington-way/3528277
+  doc: Police: Speeding causes crashes on Fort Washington Way Officer: It's major concern for us A truck loaded with honey tipped over on the Interstate 71 late Wednesday evening, coating the road with honey
+  rep: Police: Speeding causes crashes on Fort Washington Way Officer: It's major concern for us A truck loaded with honey tipped over on the Interstate 71 late Wednesday evening, coating the road with honey
+
+DOC http://www.positive-way.com/couple%27s%20guide.htm
+REP http://positive-way.com/couple's%20guide.htm
+  doc: A Couple's Guide to Communication Good communication means having the impact you intended to have, that is Intent equals Impact.In other words, good communication between intimates is clear and precis
+  rep: A Couple's Guide to Communication Good communication means having the impact you intended to have, that is Intent equals Impact.In other words, good communication between intimates is clear and precis
+
+DOC http://www.france24.com/en/20120511-france-new-first-lady-steps-spotlight-valerie-trierweiler-hollande-partner-marriage-journalist-profile-president
+REP http://www.france24.com/en/20120511-france-new-first-lady-steps-spotlight-valerie-trierweiler-hollande-partner-marriage-journalist-profile-president/
+  doc: France's new first lady steps into the spotlight Valérie Trierweiler, the partner of France's newly-elected president François Hollande, has vowed to continue her career as a TV presenter and journali
+  rep: Valérie Trierweiler, the partner of France's newly-elected president François Hollande, has vowed to continue her career as a TV presenter and journalist. Meet the former storyteller who is about to s
+
+DOC http://www.stangtv.com/news/epic-supercar-drag-race-puts-boss-302-laguna-seca-in-the-mix/
+REP http://www.stangtv.com/news/epic-supercar-drag-race-puts-boss-302-laguna-seca-in-the-mix/
+  doc: I would love to be the guys in this epic drag race video. The folks at Motor Trend were in the midst of their best drivers car shootout and they took the time out to run a massive 11 car drag race wit
+  rep: Epic Supercar Drag Race Puts Boss 302 Laguna Seca in the Mix I would love to be the guys in this epic drag race video. The folks at Motor Trend were in the midst of their best drivers car shootout and
+
+DOC http://www.ctnow.com/sports/olympics/bs-sp-swimming-yannick-agnel-0615-20130614,0,7584777.story
+REP http://www.chicagotribune.com/bs-sp-swimming-yannick-agnel-0615-20130614-story.html
+  doc: After parting ways with former coach Fabrice Pellerin last month, swimmer Yannick Agnel has a new home in Baltimore. Agnel, who won three medals at the 2012 Olympics in London, recently moved from his
+  rep: After parting ways with former coach Fabrice Pellerin last month, swimmer Yannick Agnel has a new home in Baltimore. Agnel, who won three medals at the 2012 Olympics in London, recently moved from his
+
+
+scala> :quit

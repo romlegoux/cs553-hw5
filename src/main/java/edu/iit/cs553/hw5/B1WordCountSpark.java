@@ -31,7 +31,12 @@ public class B1WordCountSpark {
         });
 
         // reduceByKey sums inside each partition before the shuffle = combiner
-        JavaPairRDD<String, Long> counts = words.mapToPair(w -> new Tuple2<>(w, 1L)).reduceByKey(Long::sum, Integer.parseInt(args[2]));
+                JavaPairRDD<String, Long> pairs = words.mapToPair(w -> new Tuple2<>(w, 1L));
+        int n = Integer.parseInt(args[2]);
+        // Q3: "group" -> groupByKey (no map-side combine), default -> reduceByKey (= combiner)
+        JavaPairRDD<String, Long> counts = (args.length > 3 && args[3].equals("group"))
+                ? pairs.groupByKey(n).mapValues(v -> { long s = 0; for (long x : v) s += x; return s; })
+                : pairs.reduceByKey(Long::sum, n);
         counts.map(t -> t._1 + "\t" + t._2).saveAsTextFile(args[1]);
 
         System.out.println("TOKENS=" + tokens.value() + " TOTAL_WORDS=" + total.value());

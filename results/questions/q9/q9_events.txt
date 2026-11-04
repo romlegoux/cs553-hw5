@@ -1,0 +1,4 @@
+04:29:29 mapreduce: stop NodeManager on small8 (app application_1793378561250_0253, AM on small6, normal 265s)
+04:33:15 mapreduce: finished in 367.87s
+04:37:13 spark: stop NodeManager on small8 (app application_1793378561250_0254, AM on 10.163.246.12, normal 207s)
+04:39:28 spark: finished in 283.34s

@@ -1,0 +1,4 @@
+questions/q8/b1_parquet_r1.log                input=16.62 GB
+part3/clusterB/B1_spark_fw8_r1.log            input=27.03 GB
+questions/q8/b4_parquet_r1.log                input=44.07 GB
+part3/clusterB/B4_spark_fw8_r1.log            input=54.48 GB

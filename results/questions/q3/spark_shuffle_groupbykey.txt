@@ -1,0 +1,2 @@
+1 runJob at SparkHadoopWriter.scala:85 shuffleWrite=0.0 MB shuffleRead=1749.0 MB records=0
+0 mapToPair at B1WordCountSpark.java:34 shuffleWrite=1749.0 MB shuffleRead=0.0 MB records=540092071

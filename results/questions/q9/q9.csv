@@ -1,0 +1,3 @@
+framework,seconds,normal_mean,victim,am_host,output_ok
+mapreduce,367.87,265,small8,small6,yes
+spark,283.34,207,small8,10.163.246.12,yes

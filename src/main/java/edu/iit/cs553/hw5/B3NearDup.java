@@ -106,14 +106,16 @@ public class B3NearDup {
                 .mapToPair(t -> t)
                 .distinct();
 
-        // compare each pair with the signatures: (doc, rep) -> (rep, (doc, docSig)) -> + repSig
-        JavaRDD<String> marked = pairs.join(sigs)
+                // (doc, rep) pairs that are near-duplicates
+        JavaPairRDD<String, String> nearPairs = pairs.join(sigs)
                 .mapToPair(t -> new Tuple2<>(t._2._1, new Tuple2<>(t._1, t._2._2)))
                 .join(sigs)
                 .filter(t -> similar(t._2._1._2, t._2._2))
-                .map(t -> t._2._1._1)
-                .distinct().cache();
-
+                .mapToPair(t -> new Tuple2<>(t._2._1._1, t._1))
+                .cache();
+        // Q7: optional 4th arg -> save the pairs as "doc TAB rep"
+        if (args.length > 3) nearPairs.map(t -> t._1 + "\t" + t._2).saveAsTextFile(args[3]);
+        JavaRDD<String> marked = nearPairs.keys().distinct().cache();
         // remove marked docs, write parquet with the 5 fields
         JavaRDD<Row> rows = docs.subtractByKey(marked.mapToPair(id -> new Tuple2<>(id, true)))
                 .values()
