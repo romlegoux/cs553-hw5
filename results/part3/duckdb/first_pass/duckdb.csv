@@ -1,0 +1,7 @@
+stage,dataset,rep,seconds
+b1,fw1,1,5.36
+b2,fw1,1,15.56
+b1,fw8,1,35.87
+b2,fw8,1,115.30
+b1,fw15,1,63.58
+b2,fw15,1,229.41

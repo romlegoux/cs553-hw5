@@ -1,0 +1,24 @@
+duckdb b1 fw1 r1: 5.44s
+duckdb b1 fw1 r2: 5.48s
+duckdb b1 fw1 r3: 5.35s
+duckdb b2 fw1 r1: 15.23s
+duckdb b2 fw1 r2: 15.82s
+duckdb b2 fw1 r3: 15.55s
+B1,fw1,8335c406ac606c2ee97a2485fa2e8373,8335c406ac606c2ee97a2485fa2e8373,yes
+B2,fw1,0906957211223d7bf8641bedb9733ae7,0906957211223d7bf8641bedb9733ae7,yes
+duckdb b1 fw8 r1: 35.97s
+duckdb b1 fw8 r2: 35.89s
+duckdb b1 fw8 r3: 35.67s
+duckdb b2 fw8 r1: 114.47s
+duckdb b2 fw8 r2: 115.58s
+duckdb b2 fw8 r3: 115.27s
+B1,fw8,fcba7f3c12a0508e7ac62037bfc6372c,fcba7f3c12a0508e7ac62037bfc6372c,yes
+B2,fw8,496ff12f90a651e762f45f70e9419928,496ff12f90a651e762f45f70e9419928,yes
+duckdb b1 fw15 r1: 63.63s
+duckdb b1 fw15 r2: 63.53s
+duckdb b1 fw15 r3: 63.79s
+duckdb b2 fw15 r1: 222.27s
+duckdb b2 fw15 r2: 236.25s
+duckdb b2 fw15 r3: 232.67s
+B1,fw15,5d6fd0e9d62dceaa17435699ea97e339,5d6fd0e9d62dceaa17435699ea97e339,yes
+B2,fw15,f2728584603302e974a18a2dea2e9c2d,f2728584603302e974a18a2dea2e9c2d,yes
