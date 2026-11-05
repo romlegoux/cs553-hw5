@@ -67,7 +67,7 @@ done
 
 for N in ${NS:-8 4 2 1}; do
   set_workers $N
-  R=$((7 * N - 1))   # 7 containers per worker - 1 AM (55 at N=8)
+  R=$((7 * N - 1))   # ~1.7 waves of the 4N reduce slots (55 at N=8)
   E=$((2 * N))       # 2 executors per worker (16 at N=8)
   for fw in mapreduce spark; do
     run_stage strong fw2 $fw $N

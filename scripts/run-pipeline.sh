@@ -9,7 +9,7 @@ CSV=$RES/pipeline.csv
 JAR=/home/ubuntu/hw5-1.0.jar
 P=edu.iit.cs553.hw5
 B3=B3NearDup   # B3 class name
-R=55           # reducers / partitions, same as part 2
+R=55           # ~1.7 waves of the 32 reduce slots, same as part 2
 STAGES=${STAGES:-B0 B1mr B1spark B2mr B2spark B3 B4}
 
 want() { [[ " $STAGES " == *" $1 "* ]]; }

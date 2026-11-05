@@ -8,7 +8,7 @@ CSV=$RES/sorts.csv
 [ -f $CSV ] || echo "cluster,sort,size_gb,rep,seconds,checksum_ok" > $CSV
 EX=/home/ubuntu/hadoop-3.5.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.5.0.jar
 JAR=/home/ubuntu/hw5-1.0.jar
-R=55   # 8 workers x 7 containers - 1 AM
+R=55   # ~1.7 waves of the 32 reduce slots (8 workers x 4 x 3 GB)
 
 # run a command on tiny as ubuntu, with Hadoop env
 on_tiny() { lxc exec tiny -- sudo -H -u ubuntu bash -lc "$1"; }
