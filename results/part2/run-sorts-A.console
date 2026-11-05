@@ -1,0 +1,26 @@
+input 16GB checksum: 4c4bfd815781f6b
+terasort 16GB r1: 144.76s checksum_ok=yes
+terasort 16GB r2: 157.33s checksum_ok=yes
+terasort 16GB r3: 154.93s checksum_ok=yes
+mrsort 16GB r1: 155.21s checksum_ok=yes
+mrsort 16GB r2: 161.89s checksum_ok=yes
+mrsort 16GB r3: 158.39s checksum_ok=yes
+sparksort 16GB r1: 120.22s checksum_ok=yes
+sparksort 16GB r2: 124.73s checksum_ok=yes
+sparksort 16GB r3: 129.76s checksum_ok=yes
+input 32GB checksum: 989855bd93eb6b8
+terasort 32GB r1: 448.32s checksum_ok=yes
+terasort 32GB r2: 434.86s checksum_ok=yes
+terasort 32GB r3: 417.64s checksum_ok=yes
+mrsort 32GB r1: 439.35s checksum_ok=yes
+mrsort 32GB r2: 449.06s checksum_ok=yes
+mrsort 32GB r3: 428.58s checksum_ok=yes
+sparksort 32GB r1: 282.06s checksum_ok=yes
+sparksort 32GB r2: 296.51s checksum_ok=yes
+sparksort 32GB r3: 330.86s checksum_ok=yes
+input 64GB checksum: 1312ea3fff30ef5a
+terasort 64GB r1: 1091.46s checksum_ok=yes
+mrsort 64GB r1: 1147.73s checksum_ok=yes
+./run-sorts.sh: line 91: [: Pulling /var/lib/snapd/hostfs/home/cc/hw5/results/part2/clusterA/mrsort_64GB_r1_large.sar from tmp/mrsort_64GB_r1.sar: 77.86MB (77.85MB/s)Pulling /var/lib/snapd/hostfs/home/cc/hw5/results/part2/clusterA/mrsort_64GB_r1_large.sar from tmp/mrsort_64GB_r1.sar: 156.07MB (78.02MB/s)                                                                                                                                            1147: integer expression expected
+sparksort 64GB r1: 873.50s checksum_ok=yes
+./run-sorts.sh: line 91: [: Pulling /var/lib/snapd/hostfs/home/cc/hw5/results/part2/clusterA/sparksort_64GB_r1_large.sar from tmp/sparksort_64GB_r1.sar: 75.07MB (75.05MB/s)                                                                                                                                                 873: integer expression expected

@@ -8,7 +8,7 @@ SPARK_VER=4.2.0
 HADOOP_TGZ=hadoop-$HADOOP_VER.tar.gz
 SPARK_TGZ=spark-$SPARK_VER-bin-hadoop3.tgz
 JAVA_HOME_VM=/usr/lib/jvm/java-17-openjdk-amd64
-VMS=$(lxc list --format csv -c n)
+VMS=${VMS:-$(lxc list --format csv -c n)}
 
 # 1. Télécharger une seule fois sur le node (commandes de l'énoncé)
 mkdir -p ~/dl ~/logs/install && cd ~/dl

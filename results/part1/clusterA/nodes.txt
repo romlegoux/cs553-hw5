@@ -1,0 +1,9 @@
+Total Nodes:1
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+     large:38929	        RUNNING	       large:8042	                           0
+Detailed Node Information :
+	Configured Resources : <memory:98304, vCores:64>
+	Allocated Resources : <memory:0, vCores:0>
+	Resource Utilization by Node : PMem:1503 MB, VMem:1503 MB, VCores:0.0066644456
+	Resource Utilization by Containers : PMem:0 MB, VMem:0 MB, VCores:0.0
+	Node-Labels : 

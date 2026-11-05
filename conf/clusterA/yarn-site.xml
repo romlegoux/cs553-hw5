@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+
+<!-- Site specific YARN configuration properties -->
+<property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>tiny</value>
+  </property>
+
+  <!-- Service qui sert les sorties des maps aux reducers (le shuffle) -->
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+
+  <!-- Ce que chaque worker offre à YARN : 12 Go sur 16, et 8 vCPU -->
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>98304</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.cpu-vcores</name>
+    <value>64</value>
+  </property>
+
+  <!-- Taille minimale et maximale d'un container -->
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>512</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>98304</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>64</value>
+  </property>
+
+  <!-- Fichiers intermédiaires (shuffle, spills) et logs des containers -->
+  <property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>/home/ubuntu/yarn/local</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.log-dirs</name>
+    <value>/home/ubuntu/yarn/logs</value>
+  </property>
+
+  <!-- Ne pas tuer les containers à cause de leur mémoire *virtuelle* -->
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+  </property>
+
+  <!-- Rassembler les logs des containers dans HDFS (commande yarn logs) -->
+  <property>
+    <name>yarn.log-aggregation-enable</name>
+    <value>true</value>
+  </property>
+</configuration>
