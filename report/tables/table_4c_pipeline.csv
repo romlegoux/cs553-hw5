@@ -1,0 +1,10 @@
+Stage,Framework,FW-1 (s),FW-8 (s),FW-15 (s)
+B0 Ingest,Spark,37.2,136.9,280.2
+B1 Word count,MapReduce,69.1,258.3,444.7
+B1 Word count,Spark,34.7,87.8,135.2
+B1 Word count,DuckDB,5.4,35.8,63.6
+B2 Filter + exact dedup,MapReduce,56.0,264.8,724.4 (1 run)
+B2 Filter + exact dedup,Spark,36.7,206.6,642.0 (1 run)
+B2 Filter + exact dedup,DuckDB,15.5,115.1,230.4
+B3 Near-dup,Spark,76.9,415.0,699.7 (1 run)
+B4 Report,Spark,53.6,152.3,245.5

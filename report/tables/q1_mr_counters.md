@@ -1,0 +1,9 @@
+### Q1 - MapReduce counters of the 64GB sorts
+
+Cluster     Sort HDFS read (GB) HDFS written (GB) Local disk read (GB) Local disk written (GB) Shuffle (GB) Spilled records / map output records
+      A   MRSort          64.00             64.00               129.19                  195.84        66.56                                 2.94
+      A TeraSort          64.00             64.00               129.19                  195.84        66.56                                 2.94
+      B   MRSort          64.00             64.00               129.19                  195.84        66.56                                 2.94
+      B TeraSort          64.00             64.00               129.19                  195.84        66.56                                 2.94
+
+From the counters printed at the end of each job (1 GB = 10^9 bytes).

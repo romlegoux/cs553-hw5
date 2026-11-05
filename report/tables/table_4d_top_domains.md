@@ -1,0 +1,23 @@
+### B4 - 20 domains contributing the most tokens (final FW-15 corpus)
+
+ Rank                     domain     tokens share (%)
+    1           en.wikipedia.org 33,335,935     0.323
+    2                 google.com 28,206,511     0.274
+    3 chroniclingamerica.loc.gov 27,038,041     0.262
+    4                  issuu.com 14,037,407     0.136
+    5             fanfiction.net 13,134,500     0.127
+    6             openjurist.org 12,499,664     0.121
+    7            theguardian.com 12,396,662     0.120
+    8         bleacherreport.com  8,184,310     0.079
+    9                hindawi.com  8,178,458     0.079
+   10          journals.plos.org  7,856,840     0.076
+   11                nytimes.com  7,157,328     0.069
+   12         washingtonpost.com  6,864,036     0.067
+   13            frontiersin.org  6,593,123     0.064
+   14               ufdc.ufl.edu  6,498,342     0.063
+   15                  google.es  5,922,766     0.057
+   16                  prweb.com  5,779,724     0.056
+   17               hubpages.com  5,775,441     0.056
+   18                   icty.org  5,655,600     0.055
+   19        caselaw.findlaw.com  5,643,154     0.055
+   20            dailymail.co.uk  5,209,939     0.051

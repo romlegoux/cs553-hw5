@@ -4,3 +4,5 @@
 *.pub
 target/
 *.sar
+report/sar_csv/
+report/sar_csv/

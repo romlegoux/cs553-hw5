@@ -1,0 +1,11 @@
+### Table 4a - Sorting time and throughput
+
+       Cluster Data   TeraSort (s)     MRSort (s) SparkSort (s) TeraSort (GB/s) MRSort (GB/s) SparkSort (GB/s)
+ A: 1 large VM 16GB          152.3          158.5         124.9           0.105         0.101            0.128
+ A: 1 large VM 32GB          433.6          439.0         303.1           0.074         0.073            0.106
+ A: 1 large VM 64GB 1091.5 (1 run) 1147.7 (1 run) 873.5 (1 run)           0.059         0.056            0.073
+B: 8 small VMs 16GB          141.9          145.1         128.6           0.113         0.110            0.124
+B: 8 small VMs 32GB          324.0          333.6         255.7           0.099         0.096            0.125
+B: 8 small VMs 64GB  780.0 (1 run)  808.0 (1 run) 634.0 (1 run)           0.082         0.079            0.101
+
+Mean of 3 runs unless marked. Throughput = data size (10^9 bytes) / mean time.
